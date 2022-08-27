@@ -1,0 +1,1 @@
+console.log("Lecture 1 started:");
