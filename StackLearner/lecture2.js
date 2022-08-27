@@ -12,7 +12,7 @@ function Person(name, email) {
     this.name = name;
     this.email = email;
     this.print = function () {
-        console.log("Name:" + this.name);
+        console.log("Name: " + this.name);
     }
 }
 
@@ -26,7 +26,8 @@ var p3 = new Person("jony", 'jony@gmail.com');
 let people = [p1, p2, p3];
 
 people.forEach(person => {
-   console.log(person.email); 
+    person.print();
+    console.log("Email: " + person.email);
 });
 
 
