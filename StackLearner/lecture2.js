@@ -31,3 +31,16 @@ people.forEach(person => {
 });
 
 
+for( var props in p1){
+    console.log("properties of p1: "+ props);
+}
+
+function Book(name, author, price){
+    this.name = name;
+    this.author = author;
+    this.price = price;
+}
+
+var book = new Book("Functional Javascript", "Faisal the vai", 30);
+
+console.log(book.constructor);
