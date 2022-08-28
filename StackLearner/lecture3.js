@@ -34,66 +34,17 @@
 // myFunc(); // innerFunc {}
 // new keyword use kore, ekta object create kora hoise, r eikhane this ei object kei refer kore, jehetu new diye object create kora hoise and ei object ta empty, tai {} show kortese.
 
-// let person = {
-//     name: "faisal",
-//     print: function () {
-//         console.log("Hello, " + this.name);
-//     }
-// }
-// person.print(); // Hello, faisal
+let person = {
+    name: "faisal",
+    print: function () {
+        console.log("Hello, " + this.name);
+    }
+}
+person.print(); // Hello, faisal
 
-// let myName = person.name;
-// console.log(myName);
+let myName = person.name;
+console.log(myName);
 
-// let myPrint = person.print;
-// let myPrint = person.print.bind(person); 
-// myPrint();
-
-
-// bind 
-// baire theke, kivabe explicit vabe ekta function er sathe ekta object k bind korte hoy. 
-// function add(num) {
-//     return this.value + num;
-// }
-
-// var obj = {
-//     value: 10
-// }
-
-// let binded = add.bind(obj);
-// let result = binded(5);
-// console.log(result);
-
-
-// var people = {
-//     name: "Faisal",
-//     print: function () {
-//         setTimeout(function () {
-//             console.log("Hello " + this.name);
-//         }, 2000)
-//     }
-// }
-// people.print();
-// eikhane setTimeout er vitore callback function ta kono object k refer kortese na, tai this keyword ta  window k refer kore.
-
-
-
-
-
-
-// solution 
-
-// var people2 = {
-//     name: "Farhan",
-//     print: function () {
-//         setTimeout(function () {
-//             console.log("Hello " + this.name);
-//         }.bind(this), 2000)
-//     }
-// }
-// people2.print();
-
-
-// method er vitore this thakle, seta object k refer kore,
-// function er vitore this thakle, seta window/global k refer kore.
-// object er khetrei this kaj korbe. 
+let myPrint = person.print;
+let myPrint = person.print.bind(person); 
+myPrint();
