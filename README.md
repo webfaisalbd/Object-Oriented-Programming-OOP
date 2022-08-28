@@ -396,7 +396,7 @@ p2.print(); // Farhan 37 faq@gmail.com
 
 
 
-
+- set all prototype in object
 ```javascript
 function Person(name, age){
     this.name = name;
@@ -421,18 +421,46 @@ console.log(p2);
 ```
 
 
+---
+---
 
+
+
+`bind` `call` `apply`
 
 ```javascript
+function printMe(){
+    console.log('Hello ' + this.name);
+}
+printMe(); // Hello undefined
+```
+- kono ekta logic ba function k amra baire theke use korte cassi, onno kono context/object e.
+- bind amader ekta function return kore.
+- tai bind k abar call korte hoy.
+- tai jodi amader install call korte hoy, tokhn amra call/apply use korbo.
 
+```javascript
+function printMe(){
+    console.log('Hello ' + this.name);
+}
+
+let obj1 = {
+    name: 'Faisal',
+    age: 27
+}
+
+let obj2 ={
+    name: 'Tasnim',
+    age: 26
+}
+
+const binded = printMe.bind(obj1);
+binded();
 ```
 
 
 
 
-```javascript
-
-```
 
 
 
