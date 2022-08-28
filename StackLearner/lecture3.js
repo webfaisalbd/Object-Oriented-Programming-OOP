@@ -34,17 +34,32 @@
 // myFunc(); // innerFunc {}
 // new keyword use kore, ekta object create kora hoise, r eikhane this ei object kei refer kore, jehetu new diye object create kora hoise and ei object ta empty, tai {} show kortese.
 
-let person = {
-    name: "faisal",
-    print: function () {
-        console.log("Hello, " + this.name);
-    }
+// let person = {
+//     name: "faisal",
+//     print: function () {
+//         console.log("Hello, " + this.name);
+//     }
+// }
+// person.print(); // Hello, faisal
+
+// let myName = person.name;
+// console.log(myName);
+
+// let myPrint = person.print.bind(person); 
+// myPrint();
+
+
+// bind 
+// baire theke, kivabe explicit vabe ekta function er sathe ekta object k bind korte hoy. 
+function add(num) {
+    return this.value + num;
 }
-person.print(); // Hello, faisal
 
-let myName = person.name;
-console.log(myName);
+var obj = {
+    value: 10
+}
 
-let myPrint = person.print;
-let myPrint = person.print.bind(person); 
-myPrint();
+let binded = add.bind(obj);
+let result = binded(5);
+console.log(result);
+
