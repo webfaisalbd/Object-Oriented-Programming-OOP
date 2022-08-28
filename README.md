@@ -193,6 +193,182 @@ myFunc(); // innerFunc {}
 ```
 
 
+---
+---
+
+`this problem`
+
+```javascript
+let person = {
+    name: "faisal",
+    print: function () {
+        console.log("Hello, " + this.name);
+    }
+}
+let myName = person.name;
+console.log(myName); // faisal
+
+// ei khane person.print() er vitore this.name call hoya mane, print method er vitore this.name call hoya, tai seta object k refer kore,
+person.print(); // Hello, faisal
+```
+
+
+
+- this problem and solution
+- problem
+```javascript
+let person = {
+    name: "faisal",
+    print: function () {
+        console.log("Hello, " + this.name);
+    }
+}
+let myPrint = person.print; 
+myPrint(); // hello undefined
+output: hello undefined
+// eikhane undefined astese, karon, eikhane person.print method ta baire theke ekta alada variable e rakha hoise, tai eita te this mane, window object k refer kore. tai eitar solution hosse, eita k bind method diye bind korte hobe.
+```
+- solution
+```javascript
+let person = {
+    name: "faisal",
+    print: function () {
+        console.log("Hello, " + this.name);
+    }
+}
+let myPrint = person.print.bind(person); 
+myPrint(); // Hello, faisal
+```
+
+
+
+`bind`
+- bind 
+- baire theke, kivabe explicit vabe ekta function er sathe ekta object k bind korte hoy. 
+```javascript
+function add(num) {
+    return this.value + num;
+}
+
+var obj = {
+    value: 10
+}
+
+let binded = add.bind(obj);
+let result = binded(5); // num=5 
+console.log(result); // 15
+```
+
+
+
+
+`setTimeout Problem`
+- eikhane setTimeout er vitore callback function ta kono object k refer kortese na, eita individual ekta function. tai this keyword ta  window k refer kore. tai this.name = undefined
+```javascript
+var people = {
+    name: "Faisal",
+    print: function () {
+        setTimeout(function () {
+            console.log("Hello " + this.name);
+        }, 2000)
+    }
+}
+people.print(); // hello undefined
+```
+
+`setTimeout Solution`
+```javascript
+// solution 
+
+var people2 = {
+    name: "Farhan",
+    print: function () {
+        setTimeout(function () {
+            console.log("Hello " + this.name);
+        }.bind(this), 2000) // eikhane this diye bind kora hoise
+    }
+}
+people2.print();
+```
+
+
+
+---
+## What We learn:
+- method er vitore this thakle, seta object k refer kore,
+- function er vitore this thakle, seta window/global k refer kore.
+object er khetrei this kaj korbe. 
+---
+
+
+---
+---
+---
+
+
+### Prototype
+- code duplication, without prototype
+```javascript
+// code duplication, without prototype
+function Person(name, age){
+    this.name = name;
+    this.age = age;
+
+    this.hello = function(){
+        console.log("hello"+ this.name);
+    }
+}
+
+let p1 = new Person("Faisal", 27);
+let p2 = new Person("Farhan", 37);
+
+console.log(p1);
+console.log(p2);
+```
+
+
+
+
+```javascript
+
+```
+
+
+
+
+```javascript
+
+```
+
+
+
+
+```javascript
+
+```
+
+
+
+
+```javascript
+
+```
+
+
+
+
+```javascript
+
+```
+
+
+
+
+```javascript
+
+```
+
+
 
 
 ```javascript
