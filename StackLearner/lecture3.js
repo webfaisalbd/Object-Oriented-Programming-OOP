@@ -51,15 +51,28 @@
 
 // bind 
 // baire theke, kivabe explicit vabe ekta function er sathe ekta object k bind korte hoy. 
-function add(num) {
-    return this.value + num;
-}
+// function add(num) {
+//     return this.value + num;
+// }
 
-var obj = {
-    value: 10
-}
+// var obj = {
+//     value: 10
+// }
 
-let binded = add.bind(obj);
-let result = binded(5);
-console.log(result);
+// let binded = add.bind(obj);
+// let result = binded(5);
+// console.log(result);
+
+
+var people = {
+    name: "Faisal",
+    print: function () {
+        setTimeout(function () {
+            console.log("Hello " + this.name);
+        }, 2000)
+    }
+}
+people.print();
+// eikhane setTimeout er vitore callback function ta kono object k refer kortese na, tai this keyword ta  window k refer kore.
+
 
