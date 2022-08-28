@@ -17,9 +17,7 @@ Person.prototype.hello = function(){
     console.log("hello "+ this.name);
 }
 
-// console.log(Person.prototype);
-// prototype ekta object, tar vitore function ase.
-
+Person.prototype.email = "faq@gmail.com";
 
 let p1 = new Person("Faisal", 27);
 let p2 = new Person("Farhan", 37);
@@ -27,4 +25,5 @@ let p2 = new Person("Farhan", 37);
 console.log(p1);
 console.log(p2);
 
-// Jokhon object create kora hobe, tokhon object er sathe __proto__ name er extra ekta property add hoye jabe.
+// p1, p2 dui object ei same email peye jabe.
+// abar p1.__proto__.email = "abcd@gmail.com"; set kore dileyo, p2 te o email change hoye jabe.
