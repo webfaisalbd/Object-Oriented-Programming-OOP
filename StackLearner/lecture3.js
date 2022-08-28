@@ -64,15 +64,31 @@
 // console.log(result);
 
 
-var people = {
-    name: "Faisal",
+// var people = {
+//     name: "Faisal",
+//     print: function () {
+//         setTimeout(function () {
+//             console.log("Hello " + this.name);
+//         }, 2000)
+//     }
+// }
+// people.print();
+// eikhane setTimeout er vitore callback function ta kono object k refer kortese na, tai this keyword ta  window k refer kore.
+
+
+
+
+
+
+// solution 
+
+var people2 = {
+    name: "Farhan",
     print: function () {
         setTimeout(function () {
             console.log("Hello " + this.name);
-        }, 2000)
+        }.bind(this), 2000)
     }
 }
-people.print();
-// eikhane setTimeout er vitore callback function ta kono object k refer kortese na, tai this keyword ta  window k refer kore.
-
+people2.print();
 
