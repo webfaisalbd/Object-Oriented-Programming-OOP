@@ -347,7 +347,7 @@ console.log(p2);
 // Jokhon object create kora hobe, tokhon object er sathe __proto__ name er extra ekta property add hoye jabe.
 ```
 
-- set another prototype
+- set another prototype named email
 ```javascript
 function Person(name, age){
     this.name = name;
@@ -370,11 +370,28 @@ console.log(p2);
 // abar p1.__proto__.email = "abcd@gmail.com"; set kore dileyo, p2 te o email change hoye jabe.
 ```
 
-
-
-
+-  set another prototype named print
 ```javascript
+function Person(name, age){
+    this.name = name;
+    this.age = age;
+}
 
+Person.prototype.hello = function(){
+    console.log("hello "+ this.name);
+}
+
+Person.prototype.email = "faq@gmail.com";
+
+Person.prototype.print = function(){
+    console.log(this.name, this.age, this.email);
+}
+
+let p1 = new Person("Faisal", 27);
+let p2 = new Person("Farhan", 37);
+
+p1.print(); // Faisal 27 faq@gmail.com
+p2.print(); // Farhan 37 faq@gmail.com
 ```
 
 

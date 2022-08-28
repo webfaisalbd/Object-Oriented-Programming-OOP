@@ -19,11 +19,13 @@ Person.prototype.hello = function(){
 
 Person.prototype.email = "faq@gmail.com";
 
+Person.prototype.print = function(){
+    console.log(this.name, this.age, this.email);
+}
+
 let p1 = new Person("Faisal", 27);
 let p2 = new Person("Farhan", 37);
 
-console.log(p1);
-console.log(p2);
+p1.print(); // Faisal 27 faq@gmail.com
+p2.print(); // Farhan 37 faq@gmail.com
 
-// p1, p2 dui object ei same email peye jabe.
-// abar p1.__proto__.email = "abcd@gmail.com"; set kore dileyo, p2 te o email change hoye jabe.
