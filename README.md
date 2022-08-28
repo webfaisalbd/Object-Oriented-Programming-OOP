@@ -426,8 +426,9 @@ console.log(p2);
 
 
 
-`bind` `call` `apply`
+#### `bind` `call` `apply`
 
+`bind`
 ```javascript
 function printMe(){
     console.log('Hello ' + this.name);
@@ -455,13 +456,105 @@ let obj2 ={
 }
 
 const binded = printMe.bind(obj1);
-binded();
+binded(); // Hello Faisal
+```
+
+- in the below, we can't get any difference between call and apply,
+- but go ahead, you will definitely understand
+`call`
+```javascript
+function printMe(){
+    console.log('Hello ' + this.name);
+}
+
+let obj1 = {
+    name: 'Faisal',
+    age: 27
+}
+
+let obj2 ={
+    name: 'Tasnim',
+    age: 26
+}
+
+printMe.call(obj1); // Hello Faisal
+```
+
+`apply`
+```javascript
+function printMe(){
+    console.log('Hello ' + this.name);
+}
+
+let obj1 = {
+    name: 'Faisal',
+    age: 27
+}
+
+let obj2 ={
+    name: 'Tasnim',
+    age: 26
+}
+
+printMe.apply(obj1); // Hello Faisal
 ```
 
 
+- Differece between bind call and apply
+
+- for bind method, again call the result()
+```javascript
+function add(a, b) {
+    return (a + b) * this.c;
+}
+
+let obj1 = {
+    c: 3
+}
+
+let obj2 = {
+    c: 5
+}
+
+let result = add.bind(obj1, 2, 5);
+console.log(result());
+```
 
 
+- for call method, provide arguments as separated by comma
+```javascript
+function add(a, b) {
+    return (a + b) * this.c;
+}
 
+let obj1 = {
+    c: 3
+}
+
+let obj2 = {
+    c: 5
+}
+
+console.log(add.call(obj1, 2, 5)); // 21
+```
+
+
+- for apply method, provide arguments as array
+```javascript
+function add(a, b) {
+    return (a + b) * this.c;
+}
+
+let obj1 = {
+    c: 3
+}
+
+let obj2 = {
+    c: 5
+}
+
+console.log(add.apply(obj1, [2, 5]));
+```
 
 
 
@@ -471,11 +564,105 @@ binded();
 
 
 
+```javascript
+
+```
+
+
 
 ```javascript
 
 ```
 
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
 
 
 

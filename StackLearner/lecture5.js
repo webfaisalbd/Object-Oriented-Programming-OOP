@@ -1,17 +1,32 @@
-function printMe(){
-    console.log('Hello ' + this.name);
+// function printMe(){
+//     console.log('Hello ' + this.name);
+// }
+
+// let obj1 = {
+//     name: 'Faisal',
+//     age: 27
+// }
+
+// let obj2 ={
+//     name: 'Tasnim',
+//     age: 26
+// }
+
+// const binded = printMe.bind(obj1);
+// // binded();
+
+// printMe.call(obj2);
+
+function add(a, b) {
+    return (a + b) * this.c;
 }
 
 let obj1 = {
-    name: 'Faisal',
-    age: 27
+    c: 3
 }
 
-let obj2 ={
-    name: 'Tasnim',
-    age: 26
+let obj2 = {
+    c: 5
 }
 
-const binded = printMe.bind(obj1);
-binded();
-
+console.log(add.apply(obj1, [2, 5]));
