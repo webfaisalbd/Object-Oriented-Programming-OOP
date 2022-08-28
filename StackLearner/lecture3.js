@@ -82,13 +82,17 @@
 
 // solution 
 
-var people2 = {
-    name: "Farhan",
-    print: function () {
-        setTimeout(function () {
-            console.log("Hello " + this.name);
-        }.bind(this), 2000)
-    }
-}
-people2.print();
+// var people2 = {
+//     name: "Farhan",
+//     print: function () {
+//         setTimeout(function () {
+//             console.log("Hello " + this.name);
+//         }.bind(this), 2000)
+//     }
+// }
+// people2.print();
 
+
+// method er vitore this thakle, seta object k refer kore,
+// function er vitore this thakle, seta window/global k refer kore.
+// object er khetrei this kaj korbe. 
