@@ -144,22 +144,52 @@ properties of p1: print
 ---
 
 
-```javascript
+`Javascript Paradigm`
 
+- javascript e, dui doroner paradigm 
+1. fucntional paradigm 
+2. object oriented paradigm 
+
+- r this hosse object oriented concept, object er sathe this keyword er relation.
+- so javascript e, this niye ektu problem hoy.
+```javascript
+var obj = {
+    name: "faisal",
+
+    print: function(){
+        console.log(this); // {name: 'faisal', print: ƒ}
+        // object er khetre this dile, tar parent context er property passe.
+    }
+}
+
+obj.print();
 ```
 
 
-
-
+- pure function er khetre this, window k refer kore
 ```javascript
-
+function myFunc(){
+    function innerFunc(){
+        console.log(this);
+    }
+    innerFunc();
+}
+myFunc(); 
+// output: Window {window: Window, self: Window, document: document, name: '', location: Location, …}
 ```
 
 
-
-
+- new Keyword use
+- ager code r ei code same, but ei code e just new keyword use kora hoise, innerFunc() er age.
 ```javascript
-
+function myFunc(){
+    function innerFunc(){
+        console.log(this);
+    }
+    new innerFunc();
+}
+myFunc(); // innerFunc {}
+// new keyword use kore, ekta object create kora hoise, r eikhane this ei object kei refer kore, jehetu new diye object create kora hoise and ei object ta empty, tai {} show kortese.
 ```
 
 
