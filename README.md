@@ -556,16 +556,49 @@ let obj2 = {
 console.log(add.apply(obj1, [2, 5]));
 ```
 
+---
+---
 
 
+
+- inheritance with prototype 
+#### Inheritance with prototype
 ```javascript
+function Person(){
+    this.name = "Twinkle";
+}
 
+function Teacher(){
+    Person.call(this);
+    this.subject = "javascript"
+
+}
+
+let teacher = new Teacher();
+
+let name = teacher.name;
+console.log(name);
 ```
 
 
-
+- eikhane std object theke shudu Person object er name tai pawa jabe,
+- Karon amra shudu Person er object gulai inherit koresi.
+- Person object er prototype pawa jabe na. Prototype inherit kori nai.
 ```javascript
+function Person(name) {
+    this.name = name;
+}
 
+Person.prototype.printName = function () {
+    console.log("Name: " + this.name);
+}
+
+function Student(name, id){
+    Person.call(this, name);
+    this.id = id;
+}
+
+let std = new Student("Faisal Ahmed", 1614);
 ```
 
 
