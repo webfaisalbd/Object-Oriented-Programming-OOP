@@ -38,36 +38,23 @@
 // ------------------------------------------
 // ------------------------------------------
 
-const sumit = {
-    firstName: "sumit",
-    age: 35,
-    print: function(){
-        return this.firstName + " and my age is: " +this.age;
-    }
-}
 
-function Person(first, last, age){ // constructor function
+// constructor function er moddhe amra jodi kono property add korte chai, tahole normally possible na.
+// But prototype er maddhome constructor function e amra caile property add korte pari.
+
+function Person(first, last, age) {
     this.firstName = first;
     this.lastName = last;
     this.age = age;
-    this.fullName = function(){
+    this.fullName = function () {
         return this.firstName + " " + this.lastName;
     }
 }
 
-const faisal = new Person("faisal","ahmed", 26);
-const farhad = new Person("forid", "hossain", 27);
-// console.log(faisal.fullName());
+console.dir(Person); // see in browser
 
-// object dot(.) something = possible, mane, object er sathe new property add kora jabe
-faisal.country ="Bangladesh";
-// console.log(faisal);
+const faisal = new Person("Faisal", "Ahmed", 26);
 
-// constructor function dot(.) something = possible na, mane, constructor function er sathe new property add kora jabe na. 
-// constructor function ekta template, oita fixed e thakbe.
-Person.country = "Bangladesh";
-console.log(Person);
+Person.prototype.country = "Bangladesh";
 
-
-
-
+console.log(faisal); // see in browser

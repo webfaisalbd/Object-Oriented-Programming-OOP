@@ -718,8 +718,8 @@ let obj3 = new Obj3();
 
 `constructor`
 ```javascript
-const sumit = {
-    firstName: "sumit",
+const tasnim = {
+    firstName: "Tasnim",
     age: 35,
     print: function(){
         return this.firstName + " and my age is: " +this.age;
@@ -754,9 +754,29 @@ console.log(Person);
 ```
 
 
-
+`constructor function`
+- constructor function er moddhe amra jodi kono property add korte chai, tahole normally possible na.
+- But prototype er maddhome constructor function e amra caile property add korte pari.
 ```javascript
+// constructor function er moddhe amra jodi kono property add korte chai, tahole normally possible na.
+// But prototype er maddhome constructor function e amra caile property add korte pari.
 
+function Person(first, last, age) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.fullName = function () {
+        return this.firstName + " " + this.lastName;
+    }
+}
+
+console.dir(Person); // see in browser
+
+const faisal = new Person("Faisal", "Ahmed", 26);
+
+Person.prototype.country = "Bangladesh";
+
+console.log(faisal); // see in browser
 ```
 
 

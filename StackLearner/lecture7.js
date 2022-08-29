@@ -1,17 +1,30 @@
-function Animal(name) {
-    this.name = name;
+
+const tasnim = {
+    firstName: "Tasnim",
+    age: 16,
+    print: function(){
+        return this.firstName + " and my age is: " +this.age;
+    }
 }
 
-Animal.prototype.printName = function () {
-    console.log(this.name);
+function Person(first, last, age){ // constructor function
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.fullName = function(){
+        return this.firstName + " " + this.lastName;
+    }
 }
 
-function myNew(constructor){
-    var obj = {};
-    Object.setPrototypeOf(obj,constructor.prototype);
-}
+const faisal = new Person("faisal","ahmed", 26);
+const farhad = new Person("forid", "hossain", 27);
+// console.log(faisal.fullName());
 
-let cat = new Animal("Cat");
-let dog = new Animal("Dog");
+// object dot(.) something = possible, mane, object er sathe new property add kora jabe
+faisal.country ="Bangladesh";
+// console.log(faisal);
 
-cat.printName();
+// constructor function dot(.) something = possible na, mane, constructor function er sathe new property add kora jabe na. 
+// constructor function ekta template, oita fixed e thakbe.
+Person.country = "Bangladesh";
+console.log(Person);
