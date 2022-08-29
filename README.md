@@ -580,7 +580,7 @@ let name = teacher.name;
 console.log(name);
 ```
 
-
+#### object inheri
 - eikhane std object theke shudu Person object er name tai pawa jabe,
 - Karon amra shudu Person er object gulai inherit koresi.
 - Person object er prototype pawa jabe na. Prototype inherit kori nai.
@@ -602,15 +602,65 @@ let std = new Student("Faisal Ahmed", 1614);
 ```
 
 
-
+- prototype inheritance
 ```javascript
+function Person(name) {
+    this.name = name;
+}
 
+Person.prototype.printName = function () {
+    console.log("Name: " + this.name);
+}
+
+function Student(name, id){
+    Person.call(this, name);
+    this.id = id;
+}
+
+// prototype inheritance
+Student.prototype = Object.create(Person.prototype)
+
+let std = new Student("Faisal Ahmed", 1614);
 ```
 
 
-
+- Person object/function er property gula Student object/function e copy hosse na,
+- eita reference hisebe jasse
 ```javascript
+function Person(name) {
+    this.name = name;
+}
 
+Person.prototype.printName = function () {
+    console.log("Name: " + this.name);
+}
+
+Person.prototype.another = function(){
+    console.log("This is an another function.");
+}
+
+function Student(name, id){
+    Person.call(this, name);
+    this.id = id;
+}
+
+// prototype inheritance
+Student.prototype = Object.create(Person.prototype);
+
+// make constructor name Student instead of Person 
+Student.prototype.constructor = Student;
+
+let std = new Student("Faisal Ahmed", 1614);
+// console.log(std);
+
+
+// Person object/class/function er property gula Student object/class/function e copy hosse na,
+// eita reference hisebe jasse.
+// Jar karone amra code er niche jodi Person class/object e,
+// notun ekta prototype add kori, setao Student class/object theke, amra access korte parbo.
+Person.prototype.skill = "Javascript";
+
+console.log(std.skill); // Javascript
 ```
 
 
