@@ -18,4 +18,4 @@ class Model extends Car {
 }
 
 let myCar = new Model("Ford", "Mustang");
-console.log(myCar.show());
+console.log(myCar.show()); 
