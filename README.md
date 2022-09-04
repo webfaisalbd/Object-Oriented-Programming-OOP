@@ -385,6 +385,29 @@ myObj.anotherObj.value().moreFunc(); // shajib
 
 ```
 
+#### explicit rules:
+- normally call
+```javascript
+var myObj = {
+    name: "faisal",
+    anotherObj : {
+        name : "shajib",
+        value : function() {
+            console.log(this.name);
+        }
+    } 
+}
+myObj.anotherObj.value(); // shajib
+```
+
+- 
+```javascript
+
+```
+
+
+---
+---
 
 
 `bind`
