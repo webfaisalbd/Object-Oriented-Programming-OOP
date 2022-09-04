@@ -305,6 +305,33 @@ myName();
 
 
 
+#### this , object rules:
+- code 1
+```javascript
+var myObj = {
+    name: "faisal",
+    getDetails: function(){
+        name: "ahmed",
+        console.log(this.name); // faisal
+    }
+}
+myObj.getDetails();
+```
+
+- code 2
+```javascript
+
+```
+
+- code 3
+```javascript
+
+```
+
+- code 4
+```javascript
+
+```
 
 
 `bind`
