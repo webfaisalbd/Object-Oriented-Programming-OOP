@@ -269,6 +269,22 @@ myName();
 
 
 
+- code 3 
+```javascript
+function myName(){
+    let name = "ahmed";
+    return function (){
+        console.log(name); // ahmed
+        console.log(this.name); // nothing
+        console.log(this); // window
+    }
+
+}
+myName()();
+```
+
+
+
 `bind`
 - bind 
 - baire theke, kivabe explicit vabe ekta function er sathe ekta object k bind korte hoy. 
