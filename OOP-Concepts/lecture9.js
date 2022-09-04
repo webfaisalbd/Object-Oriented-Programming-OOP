@@ -7,6 +7,6 @@ var myObj = {
         }
     } 
 }
-myObj.anotherObj.value(); // shajib
+myObj.anotherObj.value.call(myObj) // faisal
 
 
