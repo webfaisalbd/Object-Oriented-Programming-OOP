@@ -241,6 +241,21 @@ myPrint(); // Hello, faisal
 ```
 
 
+`more learn about this`
+- code 1 
+```javascript
+function myName(){
+    let name = "faisal";
+    console.log(this.name); // undefined
+    console.log(this); // window
+}
+myName();
+```
+
+
+
+
+
 
 `bind`
 - bind 
