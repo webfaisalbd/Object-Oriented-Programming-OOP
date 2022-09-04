@@ -4,10 +4,12 @@ var myObj = {
         let name= "ahmed";
          console.log(this.name); // faisal
     },
-    getDetails2 : () => {
-        let name= "shajib";
-        console.log(this.name); // shajib
-    }
+    anotherObj : {
+        name : "shajib",
+        value : function() {
+            console.log(this.name);
+        }
+    } 
 }
-myObj.getDetails2();
+myObj.anotherObj.value();
 
