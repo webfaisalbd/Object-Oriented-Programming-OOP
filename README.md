@@ -285,6 +285,28 @@ myName()();
 
 
 
+- code 4
+```javascript
+function myName() {
+    let name = "ahmed";
+    console.log(name); // ahmed
+    console.log(this.name); // undefined
+    console.log(this); // window
+    const yourName = () => {
+        let name = "shajib";
+        console.log(name); // shajib
+        console.log(this.name); // undefined
+        console.log(this); // window
+    }
+    yourName();
+}
+myName();
+```
+
+
+
+
+
 `bind`
 - bind 
 - baire theke, kivabe explicit vabe ekta function er sathe ekta object k bind korte hoy. 
