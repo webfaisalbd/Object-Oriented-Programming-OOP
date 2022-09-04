@@ -253,7 +253,19 @@ myName();
 ```
 
 
-
+- code 2 
+```javascript
+function myName(){
+    let name = "ahmed";
+    function yourName(){
+         console.log(name); // ahmed
+         console.log(this.name); // nothing
+         console.log(this); // window
+    }
+    yourName();
+}
+myName();
+```
 
 
 
