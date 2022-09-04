@@ -306,6 +306,11 @@ myName();
 
 
 #### this , object rules:
+
+- rules:
+- object er vitore this access kora jabe,
+- object er vitore method normal function hole, parent context pabe. r jodi arrow function hoy, tobe immediate function pabe.
+
 - code 1
 ```javascript
 var myObj = {
