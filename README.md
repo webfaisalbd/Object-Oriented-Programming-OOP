@@ -469,7 +469,8 @@ console.dir(num);
 ```
 
 ```javascript
-
+var bool = new Boolean(true);
+console.dir(bool);
 ```
 
 ```javascript

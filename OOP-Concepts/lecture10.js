@@ -32,3 +32,6 @@
 
 // var num = new Number(100);
 // console.dir(num);
+
+// var bool = new Boolean(true);
+// console.dir(bool);
