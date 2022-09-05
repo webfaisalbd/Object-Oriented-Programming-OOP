@@ -8,8 +8,19 @@
 // // length: 4
 // // [[Prototype]]: Array(0)
 
-var arr = [10,30,20,60];
-console.log(arr.length); // 4
-console.log(arr.push(60));
-//  we can get, length property in object property
-//  we can get, push function in object method
+// var arr = [10,30,20,60];
+// console.log(arr.length); // 4
+// console.log(arr.push(60));
+// //  we can get, length property in object property
+// //  we can get, push function in object method
+
+
+// const myObject = {
+//     city: 'Madrid',
+//     greet() {
+//       console.log(`Greetings from ${this.city}`);
+//     }
+//   }
+  
+//   console.dir(myObject); // expand browser console
+

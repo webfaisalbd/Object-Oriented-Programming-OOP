@@ -442,7 +442,14 @@ console.log(arr.push(60));
 ```
 
 ```javascript
-
+const myObject = {
+    city: 'Madrid',
+    greet() {
+      console.log(`Greetings from ${this.city}`);
+    }
+  }
+  
+  console.dir(myObject); // expand browser console
 ```
 
 ```javascript
