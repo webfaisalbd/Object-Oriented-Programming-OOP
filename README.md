@@ -434,6 +434,11 @@ console.dir(arr);
 
 ```javascript
 
+var arr = [10,30,20,60];
+console.log(arr.length); // 4
+console.log(arr.push(60));
+//  we can get, length property in object property
+//  we can get, push function in object method
 ```
 
 ```javascript
