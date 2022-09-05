@@ -464,7 +464,8 @@ console.dir(str);
 ```
 
 ```javascript
-
+var num = new Number(100);
+console.dir(num);
 ```
 
 ```javascript

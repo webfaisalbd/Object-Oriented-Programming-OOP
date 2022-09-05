@@ -27,5 +27,8 @@
 // var str = "faisal";
 // console.dir(str);
 
-var str = new String("faisal");
-console.dir(str);
+// var str = new String("faisal");
+// console.dir(str);
+
+// var num = new Number(100);
+// console.dir(num);
