@@ -452,8 +452,10 @@ const myObject = {
   console.dir(myObject); // expand browser console
 ```
 
+- in console, no object show, so, str means, string is primitive type data
 ```javascript
-
+var str = "faisal";
+console.dir(str);
 ```
 
 ```javascript
