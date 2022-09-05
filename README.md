@@ -459,7 +459,8 @@ console.dir(str);
 ```
 
 ```javascript
-
+var str = new String("faisal");
+console.dir(str);
 ```
 
 ```javascript

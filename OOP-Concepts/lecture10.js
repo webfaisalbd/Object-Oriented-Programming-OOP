@@ -24,5 +24,8 @@
   
 //   console.dir(myObject); // expand browser console
 
-var str = "faisal";
+// var str = "faisal";
+// console.dir(str);
+
+var str = new String("faisal");
 console.dir(str);
