@@ -479,7 +479,9 @@ console.dir(myArr);
 ```
 
 ```javascript
-
+// new Date(year, month, day, hours, minutes, seconds, milliseconds)
+const d = new Date(2022, 09, 05);
+console.dir(d);
 ```
 
 ```javascript

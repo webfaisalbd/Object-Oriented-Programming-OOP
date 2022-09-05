@@ -38,3 +38,8 @@
 
 // var myArr = new Array([10,20,50,60]);
 // console.dir(myArr);
+
+
+// // new Date(year, month, day, hours, minutes, seconds, milliseconds)
+// const d = new Date(2022, 09, 05);
+// console.dir(d);
