@@ -35,3 +35,6 @@
 
 // var bool = new Boolean(true);
 // console.dir(bool);
+
+// var myArr = new Array([10,20,50,60]);
+// console.dir(myArr);

@@ -474,7 +474,8 @@ console.dir(bool);
 ```
 
 ```javascript
-
+var myArr = new Array([10,20,50,60]);
+console.dir(myArr);
 ```
 
 ```javascript
