@@ -525,9 +525,14 @@ console.log(rifat.name); // Rifat
 ```
 
 
-
+### this and new keyword
+- new likha mane, create object and ei this keyword refer to that object 
 ```javascript
-
+var MyName = function(n){
+    this.name = n;
+}
+const farhad = new MyName("Forid Ahmed");
+console.log(farhad.name); // Forid Ahmed
 ```
 
 
