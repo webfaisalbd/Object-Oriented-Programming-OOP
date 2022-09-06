@@ -586,12 +586,6 @@ console.log(PersonWithMethod.prototype);
 // [[Prototype]]: Object
 ```
 
----
----
-
----
----
-
 
 
 ```javascript
@@ -601,8 +595,32 @@ faisal.dateOfBirth();
 ```
 
 
+
+---
+---
+
+---
+---
+
+
+
+### Constructor Inheritance
+
 ```javascript
 
+const Person = function(name, age){
+    this.name = name;
+    this.age = age;
+}
+
+const Teacher  = function(name, age, subject){
+    Person.call(this, name, age);
+    this.subject = subject;
+}
+
+const ahmed = new Teacher("F Ahmed", 35, "CSE");
+console.log(ahmed.name);
+// F Ahmed
 ```
 
 

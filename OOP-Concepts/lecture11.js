@@ -73,24 +73,44 @@
 
 
 
-// prototype system, e function constructor e method add 
-const PersonWithMethod = function (name, age, job){
+// // prototype system, e function constructor e method add 
+// const PersonWithMethod = function (name, age, job){
+//     this.name = name;
+//     this.age = age;
+//     this.job = job;
+// }
+
+
+// PersonWithMethod.prototype.dateOfBirth = function(){
+//     console.log(this.name + " is born in " + (2022 - this.age));
+// }
+
+// console.log(PersonWithMethod.prototype);
+
+// // output 
+// // dateOfBirth: ƒ ()
+// // constructor: ƒ (name, age, job)
+// // [[Prototype]]: Object
+
+// const faisal = new PersonWithMethod("Faisal", 33, "job search");
+// faisal.dateOfBirth();
+
+
+
+
+
+
+// Constructor Inheritance 
+const Person = function(name, age){
     this.name = name;
     this.age = age;
-    this.job = job;
 }
 
-
-PersonWithMethod.prototype.dateOfBirth = function(){
-    console.log(this.name + " is born in " + (2022 - this.age));
+const Teacher  = function(name, age, subject){
+    Person.call(this, name, age);
+    this.subject = subject;
 }
 
-console.log(PersonWithMethod.prototype);
-
-// output 
-// dateOfBirth: ƒ ()
-// constructor: ƒ (name, age, job)
-// [[Prototype]]: Object
-
-const faisal = new PersonWithMethod("Faisal", 33, "job search");
-faisal.dateOfBirth();
+const ahmed = new Teacher("F Ahmed", 35, "CSE");
+console.log(ahmed.name);
+// F Ahmed
