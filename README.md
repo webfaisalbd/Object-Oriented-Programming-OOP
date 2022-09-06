@@ -645,9 +645,10 @@ console.log(myRoll);
 let myRoll = '35';  // error
 ```
 
-
+- const, redeclare and reassign not possible 
 ```javascript
-
+const myAge = '23';
+console.log(myAge);
 ```
 
 

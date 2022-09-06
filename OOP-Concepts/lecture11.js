@@ -124,6 +124,10 @@
 // var myName = "ahmed";
 // console.log(myName); // ahmed
 
-let myRoll = '23';
-console.log(myRoll);
-let myRoll = '35';  // error
+// let myRoll = '23';
+// console.log(myRoll);
+// let myRoll = '35';  // error
+
+
+const myAge = '23';
+console.log(myAge);
