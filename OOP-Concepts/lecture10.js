@@ -43,3 +43,10 @@
 // // new Date(year, month, day, hours, minutes, seconds, milliseconds)
 // const d = new Date(2022, 09, 05);
 // console.dir(d);
+
+
+const birthday = new Date('January 09, 1975 23:15:30');
+const day1 = birthday.getDay();
+// Sunday - Saturday : 0 - 6
+
+console.log(day1);

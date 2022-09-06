@@ -484,6 +484,117 @@ const d = new Date(2022, 09, 05);
 console.dir(d);
 ```
 
+---
+---
+
+
+## Function Constructor
+### create object using function constructor:
+
+- normal object problem
+```javascript
+var samir = {
+    name: "Samir",
+    age: 28,
+}
+
+var jamir = {
+    name: "Jamir",
+    age: 35
+}
+
+console.log(samir.name); // samir
+console.log(jamir.name); // jamir
+
+// here, dui ta object er e property same, but bar bar property likha lagtese
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
 ```javascript
 
 ```
