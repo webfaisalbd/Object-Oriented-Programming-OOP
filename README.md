@@ -624,8 +624,16 @@ console.log(ahmed.name);
 ```
 
 
-```javascript
+---
+---
 
+
+### let const var
+```javascript
+var myName = "faisal";
+console.log(myName); // faisal
+var myName = "ahmed";
+console.log(myName); // ahmed
 ```
 
 

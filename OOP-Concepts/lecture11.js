@@ -100,17 +100,26 @@
 
 
 
-// Constructor Inheritance 
-const Person = function(name, age){
-    this.name = name;
-    this.age = age;
-}
+// // Constructor Inheritance 
+// const Person = function(name, age){
+//     this.name = name;
+//     this.age = age;
+// }
 
-const Teacher  = function(name, age, subject){
-    Person.call(this, name, age);
-    this.subject = subject;
-}
+// const Teacher  = function(name, age, subject){
+//     Person.call(this, name, age);
+//     this.subject = subject;
+// }
 
-const ahmed = new Teacher("F Ahmed", 35, "CSE");
-console.log(ahmed.name);
-// F Ahmed
+// const ahmed = new Teacher("F Ahmed", 35, "CSE");
+// console.log(ahmed.name);
+// // F Ahmed
+
+
+
+
+// let const var 
+var myName = "faisal";
+console.log(myName); // faisal
+var myName = "ahmed";
+console.log(myName); // ahmed
