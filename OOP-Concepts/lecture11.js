@@ -48,23 +48,47 @@
 
 
 
-// function constructor e method add kora, 
-// normal system, e function constructor e method add
+// // function constructor e method add kora, 
+// // normal system, e function constructor e method add
+// const PersonWithMethod = function (name, age, job){
+//     this.name = name;
+//     this.age = age;
+//     this.job = job;
+//     this.dateOfBirth = function(){
+//         console.log(this.name + " is born in " + (2022 - this.age));
+//     }
+// }
+// const faisal = new PersonWithMethod("Faisal", 26, "jobless");
+// // faisal.dateOfBirth(); // Faisal is born in 1996
+
+// console.log(faisal);
+// // output 
+// // age: 26
+// // dateOfBirth: ƒ ()
+// // job: "jobless"
+// // name: "Faisal"
+// // [[Prototype]]: Object
+
+
+
+
+
+// prototype system, e function constructor e method add 
 const PersonWithMethod = function (name, age, job){
     this.name = name;
     this.age = age;
     this.job = job;
-    this.dateOfBirth = function(){
-        console.log(this.name + " is born in " + (2022 - this.age));
-    }
 }
-const faisal = new PersonWithMethod("Faisal", 26, "jobless");
-// faisal.dateOfBirth(); // Faisal is born in 1996
 
-console.log(faisal);
+
+PersonWithMethod.prototype.dateOfBirth = function(){
+    console.log(this.name + " is born in " + (2022 - this.age));
+}
+
+console.log(PersonWithMethod.prototype);
+
 // output 
-// age: 26
 // dateOfBirth: ƒ ()
-// job: "jobless"
-// name: "Faisal"
+// constructor: ƒ (name, age, job)
 // [[Prototype]]: Object
+

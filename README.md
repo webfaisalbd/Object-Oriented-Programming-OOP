@@ -564,9 +564,34 @@ console.log(faisal);
 ```
 
 
-```javascript
 
+- prototype system, e function constructor e method add
+```javascript
+const PersonWithMethod = function (name, age, job){
+    this.name = name;
+    this.age = age;
+    this.job = job;
+}
+
+
+PersonWithMethod.prototype.dateOfBirth = function(){
+    console.log(this.name + " is born in " + (2022 - this.age));
+}
+
+console.log(PersonWithMethod.prototype);
+
+// output 
+// dateOfBirth: ƒ ()
+// constructor: ƒ (name, age, job)
+// [[Prototype]]: Object
 ```
+
+---
+---
+
+---
+---
+
 
 
 ```javascript
