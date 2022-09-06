@@ -92,3 +92,5 @@ console.log(PersonWithMethod.prototype);
 // constructor: ƒ (name, age, job)
 // [[Prototype]]: Object
 
+const faisal = new PersonWithMethod("Faisal", 33, "job search");
+faisal.dateOfBirth();

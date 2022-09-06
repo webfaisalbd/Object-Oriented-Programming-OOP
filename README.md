@@ -595,7 +595,9 @@ console.log(PersonWithMethod.prototype);
 
 
 ```javascript
-
+const faisal = new PersonWithMethod("Faisal", 33, "job search");
+faisal.dateOfBirth();
+// Faisal is born in 1989
 ```
 
 
