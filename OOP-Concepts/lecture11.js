@@ -59,4 +59,12 @@ const PersonWithMethod = function (name, age, job){
     }
 }
 const faisal = new PersonWithMethod("Faisal", 26, "jobless");
-faisal.dateOfBirth(); // Faisal is born in 1996
+// faisal.dateOfBirth(); // Faisal is born in 1996
+
+console.log(faisal);
+// output 
+// age: 26
+// dateOfBirth: ƒ ()
+// job: "jobless"
+// name: "Faisal"
+// [[Prototype]]: Object
