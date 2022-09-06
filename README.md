@@ -536,8 +536,21 @@ console.log(farhad.name); // Forid Ahmed
 ```
 
 
-```javascript
 
+
+### function constructor e method add kora, 
+- normal system, e function constructor e method add
+```javascript
+const PersonWithMethod = function (name, age, job){
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    this.dateOfBirth = function(){
+        console.log(this.name + " is born in " + (2022 - this.age));
+    }
+}
+const faisal = new PersonWithMethod("Faisal", 26, "jobless");
+faisal.dateOfBirth(); // Faisal is born in 1996
 ```
 
 

@@ -37,8 +37,26 @@
 
 // this and new keyword 
 // new likha mane, create object and ei this keyword refer to that object 
-var MyName = function(n){
-    this.name = n;
+// var MyName = function(n){
+//     this.name = n;
+// }
+// const farhad = new MyName("Forid Ahmed");
+// console.log(farhad.name); // Forid Ahmed
+
+
+
+
+
+
+// function constructor e method add kora, 
+// normal system, e function constructor e method add
+const PersonWithMethod = function (name, age, job){
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    this.dateOfBirth = function(){
+        console.log(this.name + " is born in " + (2022 - this.age));
+    }
 }
-const farhad = new MyName("Forid Ahmed");
-console.log(farhad.name); // Forid Ahmed
+const faisal = new PersonWithMethod("Faisal", 26, "jobless");
+faisal.dateOfBirth(); // Faisal is born in 1996
