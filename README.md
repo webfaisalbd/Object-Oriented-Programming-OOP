@@ -629,6 +629,7 @@ console.log(ahmed.name);
 
 
 ### let const var
+- var, same variable again declare possible
 ```javascript
 var myName = "faisal";
 console.log(myName); // faisal
@@ -636,9 +637,12 @@ var myName = "ahmed";
 console.log(myName); // ahmed
 ```
 
-
+- let, same variable again declare not possible
 ```javascript
-
+// error this code
+let myRoll = '23';
+console.log(myRoll);
+let myRoll = '35';  // error
 ```
 
 

@@ -119,7 +119,11 @@
 
 
 // let const var 
-var myName = "faisal";
-console.log(myName); // faisal
-var myName = "ahmed";
-console.log(myName); // ahmed
+// var myName = "faisal";
+// console.log(myName); // faisal
+// var myName = "ahmed";
+// console.log(myName); // ahmed
+
+let myRoll = '23';
+console.log(myRoll);
+let myRoll = '35';  // error
