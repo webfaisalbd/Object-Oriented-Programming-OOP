@@ -651,9 +651,32 @@ const myAge = '23';
 console.log(myAge);
 ```
 
-
+- let var const scope
+- global variable can access for all(var,let,const)
 ```javascript
+var a = 5;
+function myFunc1(){
+    if(true){
+        console.log(a+10);
+    }
+}
+myFunc1(); // 15
 
+let b= 5;
+function myFunc2(){
+    if(true){
+        console.log(b+10);
+    }
+}
+myFunc2(); // 15
+
+const c = 5;
+function myFunc3(){
+    if(true){
+        console.log(c+10);
+    }
+}
+myFunc3(); // 15
 ```
 
 

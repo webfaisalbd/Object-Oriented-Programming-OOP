@@ -129,5 +129,36 @@
 // let myRoll = '35';  // error
 
 
-const myAge = '23';
-console.log(myAge);
+// const myAge = '23';
+// console.log(myAge);
+
+
+var a = 5;
+function myFunc1(){
+    if(true){
+        console.log(a+10);
+    }
+}
+myFunc1(); // 15
+
+let b= 5;
+function myFunc2(){
+    if(true){
+        console.log(b+10);
+    }
+}
+myFunc2(); // 15
+
+const c = 5;
+function myFunc3(){
+    if(true){
+        console.log(c+10);
+    }
+}
+myFunc3(); // 15
+
+
+
+
+
+
