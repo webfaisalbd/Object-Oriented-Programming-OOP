@@ -706,10 +706,27 @@ function myFunc5() {
 myFunc5();
 ```
 
+---
+---
 
 
+### IIFE (Immediate invokeed function )
 ```javascript
-
+(
+    function getFunc() {
+        let a = 5;
+        console.log(a + 45);
+    }
+)();
+// output: 50
+(
+    function getName() {
+        let b = "Faisal";
+        const c = "Ahmed";
+        console.log("My Name is " + b + " " + c);
+    }
+)();
+// output: My Name is Faisal Ahmed
 ```
 
 
