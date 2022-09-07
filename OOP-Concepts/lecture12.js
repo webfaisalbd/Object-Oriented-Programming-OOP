@@ -22,5 +22,10 @@ console.log(myString.startsWith("My"));
 var myString2 = "My name is Khan";
 console.log(myString2.endsWith("Khan"));
 
+// includes 
+var myString3 = "My name is Khan";
+console.log(myString3.includes("is"));
+
+
 
 

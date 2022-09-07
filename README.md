@@ -807,7 +807,9 @@ console.log(myString2.endsWith("Khan"));
 
 
 ```javascript
-
+// includes 
+var myString3 = "My name is Khan";
+console.log(myString3.includes("is"));
 ```
 
 
