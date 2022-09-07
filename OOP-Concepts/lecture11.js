@@ -199,14 +199,31 @@
 // // output: My Name is Faisal Ahmed
 
 
-// using es6
+// // using es6
+// {
+//     let a = 50;
+//     const b = 40;
+//     console.log(a+b);
+// }
+
+
+// IIFE for function using es6 ways 
 {
-    let a = 50;
-    const b = 40;
-    console.log(a+b);
+    var myFunc = function(){
+        const a = "Faisal Ahmed";
+        console.log(a);
+    }
 }
+myFunc();
 
 
+{
+    let myFunc2 = function(){
+        const a = "Shajib";
+        console.log(a);
+    }
+}
+myFunc2(); // error
 
 
 
