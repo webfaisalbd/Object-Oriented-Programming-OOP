@@ -27,5 +27,8 @@ var myString3 = "My name is Khan";
 console.log(myString3.includes("is"));
 
 
+// repeat 
+var myString3 = "is ";
+console.log(myString3.repeat(5));
 
 

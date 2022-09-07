@@ -815,6 +815,9 @@ console.log(myString3.includes("is"));
 
 ```javascript
 
+// repeat 
+var myString3 = "is ";
+console.log(myString3.repeat(5));
 ```
 
 
