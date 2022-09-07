@@ -790,6 +790,48 @@ ${firstName} ${middleName} ${lastName}`);
 
 
 
+### String Method: startsWith, 
+```javascript
+// startsWith 
+var myString = "My name is Khan";
+console.log(myString.startsWith("My"));
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
 
 ```javascript
 
