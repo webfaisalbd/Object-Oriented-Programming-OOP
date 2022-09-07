@@ -18,5 +18,9 @@
 var myString = "My name is Khan";
 console.log(myString.startsWith("My"));
 
+// endsWith 
+var myString2 = "My name is Khan";
+console.log(myString2.endsWith("Khan"));
+
 
 
