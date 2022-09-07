@@ -680,9 +680,32 @@ myFunc3(); // 15
 ```
 
 
+- block scope, 
+- this code gives error
 ```javascript
+// c not defined
+function myFunc4() {
+    const a = 20;
+    if (true) {
+        let c = 220;
+        console.log(a + 20);
+    }
+    console.log(a + c);
+}
+myFunc4();
 
+// b not defined
+function myFunc5() {
+    const a = 20;
+    if (true) {
+        const b = 120;
+        console.log(a + 20);
+    }
+    console.log(a + b);
+}
+myFunc5();
 ```
+
 
 
 ```javascript

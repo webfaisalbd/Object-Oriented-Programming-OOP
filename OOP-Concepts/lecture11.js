@@ -133,32 +133,51 @@
 // console.log(myAge);
 
 
-var a = 5;
-function myFunc1(){
-    if(true){
-        console.log(a+10);
+// var a = 5;
+// function myFunc1(){
+//     if(true){
+//         console.log(a+10);
+//     }
+// }
+// myFunc1(); // 15
+
+// let b= 5;
+// function myFunc2(){
+//     if(true){
+//         console.log(b+10);
+//     }
+// }
+// myFunc2(); // 15
+
+// const c = 5;
+// function myFunc3(){
+//     if(true){
+//         console.log(c+10);
+//     }
+// }
+// myFunc3(); // 15
+
+
+
+function myFunc4() {
+    const a = 20;
+    if (true) {
+        let c = 220;
+        console.log(a + 20);
     }
+    console.log(a + c);
 }
-myFunc1(); // 15
+myFunc4();
 
-let b= 5;
-function myFunc2(){
-    if(true){
-        console.log(b+10);
+
+function myFunc5() {
+    const a = 20;
+    if (true) {
+        const b = 120;
+        console.log(a + 20);
     }
+    console.log(a + b);
 }
-myFunc2(); // 15
-
-const c = 5;
-function myFunc3(){
-    if(true){
-        console.log(c+10);
-    }
-}
-myFunc3(); // 15
-
-
-
-
+myFunc5();
 
 
