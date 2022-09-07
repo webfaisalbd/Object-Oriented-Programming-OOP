@@ -207,23 +207,27 @@
 // }
 
 
-// IIFE for function using es6 ways 
-{
-    var myFunc = function(){
-        const a = "Faisal Ahmed";
-        console.log(a);
-    }
-}
-myFunc();
+// // IIFE for function using es6 ways 
+// {
+//     var myFunc = function(){
+//         const a = "Faisal Ahmed";
+//         console.log(a);
+//     }
+// }
+// myFunc();
 
 
-{
-    let myFunc2 = function(){
-        const a = "Shajib";
-        console.log(a);
-    }
-}
-myFunc2(); // error
+// {
+//     let myFunc2 = function(){
+//         const a = "Shajib";
+//         console.log(a);
+//     }
+// }
+// myFunc2(); // error
+
+
+
+
 
 
 
