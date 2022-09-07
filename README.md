@@ -729,10 +729,21 @@ myFunc5();
 // output: My Name is Faisal Ahmed
 ```
 
-
+- IIFE Using es6
 ```javascript
-
+// using es6
+{
+    let a = 50;
+    const b = 40;
+    console.log(a+b);
+}
 ```
+
+
+---
+---
+
+
 
 
 ```javascript

@@ -181,22 +181,31 @@
 // myFunc5();
 
 
-// IIFE (Immediate invokeed function )
-(
-    function getFunc() {
-        let a = 5;
-        console.log(a + 45);
-    }
-)();
-// output: 50
-(
-    function getName() {
-        let b = "Faisal";
-        const c = "Ahmed";
-        console.log("My Name is " + b + " " + c);
-    }
-)();
-// output: My Name is Faisal Ahmed
+// // IIFE (Immediate invokeed function )
+// (
+//     function getFunc() {
+//         let a = 5;
+//         console.log(a + 45);
+//     }
+// )();
+// // output: 50
+// (
+//     function getName() {
+//         let b = "Faisal";
+//         const c = "Ahmed";
+//         console.log("My Name is " + b + " " + c);
+//     }
+// )();
+// // output: My Name is Faisal Ahmed
+
+
+// using es6
+{
+    let a = 50;
+    const b = 40;
+    console.log(a+b);
+}
+
 
 
 
