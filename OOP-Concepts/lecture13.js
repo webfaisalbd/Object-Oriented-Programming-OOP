@@ -78,17 +78,26 @@
 // console.log(complex); // 20some text30
 
 
-// Type conversion 
-console.log(Number("3.1416")); // 3.1416
+// // Type conversion 
+// console.log(Number("3.1416")); // 3.1416
 
-console.log(Number()); // 0
+// console.log(Number()); // 0
 
-console.log(Number('')); // 0
+// console.log(Number('')); // 0
 
-console.log(Number(' ')); // 0
+// console.log(Number(' ')); // 0
 
-console.log("64 98"); // 64 98
+// console.log("64 98"); // 64 98
 
-console.log(typeof "64 98"); // string
+// console.log(typeof "64 98"); // string
 
-console.log(Number("abcd")); // NaN
+// console.log(Number("abcd")); // NaN
+
+
+let y = '5';
+let x = +y;
+console.log("X=", x);
+
+let y1 = "hello";
+let x1 = +y1;
+console.log("y1=", x1); // NaN
