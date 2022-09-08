@@ -61,11 +61,19 @@
 // console.log(typeof undefined); // undefined
 
 
-// concatenation 
-// String only 
-var text = 'how' + 'are you?';
-console.log(text);
+// // concatenation 
+// // String only 
+// var text = 'how' + 'are you?';
+// console.log(text);
 
-var welcomeMsg = "Hello," + text;
-console.log(welcomeMsg);
+// var welcomeMsg = "Hello," + text;
+// console.log(welcomeMsg);
+
+// string and number 
+var isString = 'hello'+ 20;
+console.log(isString); // hello20
+console.log(typeof isString); // string
+
+var complex = 10 + 10+ 'some text'+ 30;
+console.log(complex); // 20some text30
 
