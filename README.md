@@ -922,6 +922,20 @@ console.log(typeof null); // object
 console.log(typeof undefined); // undefined
 ```
 
+- null vs undefined vs empty string
+```javascript
+var variable1 = undefined;
+var variable2 = '';
+var variable3 = null;
+// undefined and empty string 
+console.log(variable1 == variable2); // false
+// empty string and null 
+console.log(variable2 == variable3); // false
+// undefined and null 
+console.log(variable1 == variable3); // true
+```
+
+
 ---
 ---
 

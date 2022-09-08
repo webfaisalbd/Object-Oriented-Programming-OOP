@@ -102,16 +102,29 @@
 // let x1 = +y1;
 // console.log("y1=", x1); // NaN
 
-// Nested Object 
-const myUser = {
-    name: 'ahmed',
-    age: 26,
-    education: {
-        degree: "BSC"
-    }
-}
-const {education : {degree}} = myUser;
-console.log(degree); // BSC
+// // Nested Object 
+// const myUser = {
+//     name: 'ahmed',
+//     age: 26,
+//     education: {
+//         degree: "BSC"
+//     }
+// }
+// const {education : {degree}} = myUser;
+// console.log(degree); // BSC
+
+// var variable1 = undefined;
+// var variable2 = '';
+// var variable3 = null;
+// // undefined and empty string 
+// console.log(variable1 == variable2); // false
+// // empty string and null 
+// console.log(variable2 == variable3); // false
+// // undefined and null 
+// console.log(variable1 == variable3); // true
+
+
+
 
 
 
