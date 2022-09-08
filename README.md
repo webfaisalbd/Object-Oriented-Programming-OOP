@@ -908,9 +908,19 @@ console.log(typeof null); // object
 console.log(typeof undefined); // undefined
 ```
 
+---
+---
 
+
+
+### Concatenation 
 ```javascript
+// String only 
+var text = 'how' + 'are you?';
+console.log(text);
 
+var welcomeMsg = "Hello," + text;
+console.log(welcomeMsg);
 ```
 
 

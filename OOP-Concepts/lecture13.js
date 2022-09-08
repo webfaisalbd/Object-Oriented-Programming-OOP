@@ -53,9 +53,19 @@
 // const {name : newName, age: newAge, degree: newDegree} = user;
 // console.log(newName, newAge, newDegree);
 
-// null vs undefined 
-console.log(null == undefined); // true
-console.log(null === undefined); // false
+// // null vs undefined 
+// console.log(null == undefined); // true
+// console.log(null === undefined); // false
 
-console.log(typeof null); // object
-console.log(typeof undefined); // undefined
+// console.log(typeof null); // object
+// console.log(typeof undefined); // undefined
+
+
+// concatenation 
+// String only 
+var text = 'how' + 'are you?';
+console.log(text);
+
+var welcomeMsg = "Hello," + text;
+console.log(welcomeMsg);
+
