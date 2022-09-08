@@ -934,9 +934,25 @@ var complex = 10 + 10+ 'some text'+ 30;
 console.log(complex); // 20some text30
 ```
 
+---
+---
 
-```javascript
 
+### Type conversion
+```javascript 
+console.log(Number("3.1416")); // 3.1416
+
+console.log(Number()); // 0
+
+console.log(Number('')); // 0
+
+console.log(Number(' ')); // 0
+
+console.log("64 98"); // 64 98
+
+console.log(typeof "64 98"); // string
+
+console.log(Number("abcd")); // NaN
 ```
 
 

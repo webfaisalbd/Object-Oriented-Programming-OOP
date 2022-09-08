@@ -69,11 +69,26 @@
 // var welcomeMsg = "Hello," + text;
 // console.log(welcomeMsg);
 
-// string and number 
-var isString = 'hello'+ 20;
-console.log(isString); // hello20
-console.log(typeof isString); // string
+// // string and number 
+// var isString = 'hello'+ 20;
+// console.log(isString); // hello20
+// console.log(typeof isString); // string
 
-var complex = 10 + 10+ 'some text'+ 30;
-console.log(complex); // 20some text30
+// var complex = 10 + 10+ 'some text'+ 30;
+// console.log(complex); // 20some text30
 
+
+// Type conversion 
+console.log(Number("3.1416")); // 3.1416
+
+console.log(Number()); // 0
+
+console.log(Number('')); // 0
+
+console.log(Number(' ')); // 0
+
+console.log("64 98"); // 64 98
+
+console.log(typeof "64 98"); // string
+
+console.log(Number("abcd")); // NaN
