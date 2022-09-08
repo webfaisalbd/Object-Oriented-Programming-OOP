@@ -1072,9 +1072,11 @@ console.log(result); // ['sakib', 'forid']
 console.log(myArray); // ['faisal', 'azhar']
 ```
 
-
+- just add 
 ```javascript
-
+var myArray2 = ['faisal', 'sakib', 'forid', 'azhar'];
+var result2 = myArray2.splice(1,0,'nahid','sobuj');
+console.log(myArray2); // ['faisal', 'nahid', 'sobuj', 'sakib', 'forid', 'azhar']
 ```
 
 
