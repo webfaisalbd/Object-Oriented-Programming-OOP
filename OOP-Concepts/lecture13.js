@@ -48,3 +48,7 @@ console.log(name1, age1, degree1);
 // es6 
 const {name, age, degree} = user;
 console.log(name, age, degree);
+
+// alias 
+const {name : newName, age: newAge, degree: newDegree} = user;
+console.log(newName, newAge, newDegree);

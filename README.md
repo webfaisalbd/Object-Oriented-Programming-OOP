@@ -888,10 +888,10 @@ const {name, age, degree} = user;
 console.log(name, age, degree);
 ```
 
-
-
+- alias 
 ```javascript
-
+const {name : newName, age: newAge, degree: newDegree} = user;
+console.log(newName, newAge, newDegree);
 ```
 
 
