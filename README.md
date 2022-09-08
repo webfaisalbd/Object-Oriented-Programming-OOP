@@ -894,9 +894,18 @@ const {name : newName, age: newAge, degree: newDegree} = user;
 console.log(newName, newAge, newDegree);
 ```
 
+---
+---
 
+
+### null vs undefined 
 ```javascript
+// equal in value, not equal in data type
+console.log(null == undefined); // true
+console.log(null === undefined); // false
 
+console.log(typeof null); // object
+console.log(typeof undefined); // undefined
 ```
 
 

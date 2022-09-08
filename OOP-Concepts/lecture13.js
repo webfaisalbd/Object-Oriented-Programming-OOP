@@ -31,24 +31,31 @@
 
 
 
-// object Destructuring 
-const user = {
-    name: "shajib",
-    age: 25,
-    degree: "cse"
-}
+// // object Destructuring 
+// const user = {
+//     name: "shajib",
+//     age: 25,
+//     degree: "cse"
+// }
 
-// es5 
-const name1 = user.name;
-const age1 = user.age;
-const degree1 = user.degree;
+// // es5 
+// const name1 = user.name;
+// const age1 = user.age;
+// const degree1 = user.degree;
 
-console.log(name1, age1, degree1);
+// console.log(name1, age1, degree1);
 
-// es6 
-const {name, age, degree} = user;
-console.log(name, age, degree);
+// // es6 
+// const {name, age, degree} = user;
+// console.log(name, age, degree);
 
-// alias 
-const {name : newName, age: newAge, degree: newDegree} = user;
-console.log(newName, newAge, newDegree);
+// // alias 
+// const {name : newName, age: newAge, degree: newDegree} = user;
+// console.log(newName, newAge, newDegree);
+
+// null vs undefined 
+console.log(null == undefined); // true
+console.log(null === undefined); // false
+
+console.log(typeof null); // object
+console.log(typeof undefined); // undefined
