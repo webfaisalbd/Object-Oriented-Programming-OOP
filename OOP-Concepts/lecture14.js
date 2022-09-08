@@ -17,9 +17,9 @@
 // myArray2.unshift("Jamal");
 // console.log(myArray2);
 
-const myNums = [2,5,7,2,9,8,6];
-myNums.push([10,20,40]);
-console.log(myNums); // [2, 5, 7, 2, 9, 8, 6, [10, 20, 40]]
+// const myNums = [2,5,7,2,9,8,6];
+// myNums.push([10,20,40]);
+// console.log(myNums); // [2, 5, 7, 2, 9, 8, 6, [10, 20, 40]]
 
 
 // remove item in an array 
@@ -32,5 +32,8 @@ console.log(myNums); // [2, 5, 7, 2, 9, 8, 6, [10, 20, 40]]
 // const result2 =myArray2.shift();
 // console.log(result2); // faisal
 // console.log(myArray2); // ['sakib', 'forid', 'matin']
+
+
+
 
 
