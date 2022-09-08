@@ -843,9 +843,21 @@ const func3 = (x,y) => {
 func3(5,7); // 12
 ```
 
+---
+---
 
-```javascript
 
+
+### Desturcturing
+```javascript 
+// old system 
+var data = ['faisal',26, 'CSE'];
+
+var name = data[0];
+var age = data[1];
+var subject = data[2];
+
+console.log(name, age, subject);
 ```
 
 
