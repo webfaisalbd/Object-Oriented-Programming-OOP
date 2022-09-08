@@ -1080,8 +1080,12 @@ console.log(myArray2); // ['faisal', 'nahid', 'sobuj', 'sakib', 'forid', 'azhar'
 ```
 
 
+- remove and add together 
 ```javascript
-
+var myArray3 = [1, 2, 3, 4];
+var result = myArray3.splice(1, 2, 50, 60, 70);
+console.log(result); // [2,3]
+console.log(myArray3); // [1,50,60,70,4]
 ```
 
 
