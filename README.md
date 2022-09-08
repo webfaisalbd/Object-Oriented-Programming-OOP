@@ -1025,9 +1025,19 @@ myArray2.unshift("Jamal");
 console.log(myArray2);
 ```
 
-
+- remove item in an array
 ```javascript
+// remove item in the last in an array
+const myArray = ['faisal','sakib','forid','matin'];
+const result =myArray.pop();
+console.log(myArray); // ['faisal', 'sakib', 'forid']
+console.log(result); // matin
 
+// remove item in the first in an array
+const myArray2 = ['faisal','sakib','forid','matin'];
+const result2 =myArray2.shift();
+console.log(result2); // faisal
+console.log(myArray2); // ['sakib', 'forid', 'matin']
 ```
 
 
