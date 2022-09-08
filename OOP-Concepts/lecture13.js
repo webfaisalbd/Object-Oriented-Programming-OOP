@@ -39,8 +39,12 @@ const user = {
 }
 
 // es5 
-const name = user.name;
-const age = user.age;
-const degree = user.degree;
+const name1 = user.name;
+const age1 = user.age;
+const degree1 = user.degree;
 
+console.log(name1, age1, degree1);
+
+// es6 
+const {name, age, degree} = user;
 console.log(name, age, degree);
