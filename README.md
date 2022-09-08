@@ -849,8 +849,9 @@ func3(5,7); // 12
 
 
 ### Desturcturing
+- for array 
 ```javascript 
-// old system 
+// es5 (old system)
 var data = ['faisal',26, 'CSE'];
 
 var name = data[0];
@@ -859,10 +860,10 @@ var subject = data[2];
 
 console.log(name, age, subject);
 ```
-
-
 ```javascript
-
+// es6 Desturcturing 
+const [myName, myAge, mySubject] = data;
+console.log(myName, myAge, mySubject);
 ```
 
 

@@ -15,6 +15,7 @@
 
 
 // Desturcturing 
+// for array 
 // old system 
 var data = ['faisal',26, 'CSE'];
 
@@ -23,3 +24,7 @@ var age = data[1];
 var subject = data[2];
 
 console.log(name, age, subject);
+
+// es6 
+const [myName, myAge, mySubject] = data;
+console.log(myName, myAge, mySubject);
