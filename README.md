@@ -893,6 +893,20 @@ console.log(name, age, degree);
 const {name : newName, age: newAge, degree: newDegree} = user;
 console.log(newName, newAge, newDegree);
 ```
+- Nested Object 
+```javascript
+const myUser = {
+    name: 'ahmed',
+    age: 26,
+    education: {
+        degree: "BSC"
+    }
+}
+const {education : {degree}} = myUser;
+console.log(degree); // BSC
+```
+
+
 
 ---
 ---

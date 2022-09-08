@@ -94,10 +94,24 @@
 // console.log(Number("abcd")); // NaN
 
 
-let y = '5';
-let x = +y;
-console.log("X=", x);
+// let y = '5';
+// let x = +y;
+// console.log("X=", x);
 
-let y1 = "hello";
-let x1 = +y1;
-console.log("y1=", x1); // NaN
+// let y1 = "hello";
+// let x1 = +y1;
+// console.log("y1=", x1); // NaN
+
+// Nested Object 
+const myUser = {
+    name: 'ahmed',
+    age: 26,
+    education: {
+        degree: "BSC"
+    }
+}
+const {education : {degree}} = myUser;
+console.log(degree); // BSC
+
+
+
