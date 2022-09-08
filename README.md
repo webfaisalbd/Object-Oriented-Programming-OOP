@@ -820,6 +820,54 @@ var myString3 = "is ";
 console.log(myString3.repeat(5));
 ```
 
+---
+---
+
+
+
+
+### Arrow Function
+```javascript
+// one parameter
+const func1 = x => console.log(x+15);
+func1(5); // 20
+
+// multile parameter
+const func2 = (x,y) => console.log(x+y);
+func2(5,10); // 15
+
+// multile parameter
+const func3 = (x,y) => {
+    console.log(x+y);
+};
+func3(5,7); // 12
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
 
 ```javascript
 
