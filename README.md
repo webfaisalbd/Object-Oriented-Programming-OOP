@@ -1024,6 +1024,12 @@ const myArray2 = ['faisal','sakib','forid','matin'];
 myArray2.unshift("Jamal");
 console.log(myArray2);
 ```
+- new item add  More example
+```javascript
+const myNums = [2,5,7,2,9,8,6];
+myNums.push([10,20,40]);
+console.log(myNums); // [2, 5, 7, 2, 9, 8, 6, [10, 20, 40]]
+```
 
 - remove item in an array
 ```javascript
@@ -1041,9 +1047,7 @@ console.log(myArray2); // ['sakib', 'forid', 'matin']
 ```
 
 
-```javascript
 
-```
 
 
 ```javascript

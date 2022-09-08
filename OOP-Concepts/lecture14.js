@@ -17,13 +17,20 @@
 // myArray2.unshift("Jamal");
 // console.log(myArray2);
 
-const myArray = ['faisal','sakib','forid','matin'];
-const result =myArray.pop();
-console.log(myArray); // ['faisal', 'sakib', 'forid']
-console.log(result); // matin
+const myNums = [2,5,7,2,9,8,6];
+myNums.push([10,20,40]);
+console.log(myNums); // [2, 5, 7, 2, 9, 8, 6, [10, 20, 40]]
 
-const myArray2 = ['faisal','sakib','forid','matin'];
-const result2 =myArray2.shift();
-console.log(result2); // faisal
-console.log(myArray2); // ['sakib', 'forid', 'matin']
+
+// remove item in an array 
+// const myArray = ['faisal','sakib','forid','matin'];
+// const result =myArray.pop();
+// console.log(myArray); // ['faisal', 'sakib', 'forid']
+// console.log(result); // matin
+
+// const myArray2 = ['faisal','sakib','forid','matin'];
+// const result2 =myArray2.shift();
+// console.log(result2); // faisal
+// console.log(myArray2); // ['sakib', 'forid', 'matin']
+
 
