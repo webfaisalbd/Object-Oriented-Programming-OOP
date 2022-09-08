@@ -1018,9 +1018,11 @@ console.log(last); // 5
 console.log(myArray.length); // 5
 ```
 
-
+- new item add in the first
 ```javascript
-
+const myArray2 = ['faisal','sakib','forid','matin'];
+myArray2.unshift("Jamal");
+console.log(myArray2);
 ```
 
 
