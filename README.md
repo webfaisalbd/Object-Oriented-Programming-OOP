@@ -866,9 +866,20 @@ const [myName, myAge, mySubject] = data;
 console.log(myName, myAge, mySubject);
 ```
 
+- object Destructuring
+```javascript 
+const user = {
+    name: "shajib",
+    age: 25,
+    degree: "cse"
+}
 
-```javascript
+// es5 
+const name = user.name;
+const age = user.age;
+const degree = user.degree;
 
+console.log(name, age, degree);
 ```
 
 
