@@ -75,3 +75,15 @@ let numbers = [10, 20, 30, 40];
 
 
 
+
+// let values = [10, 40, 20, 30, 5];
+// let max = values[0];
+// values.forEach(value => {
+//     if (value > max) {
+//         max = value;
+//     }
+// })
+// console.log(max);
+
+
+

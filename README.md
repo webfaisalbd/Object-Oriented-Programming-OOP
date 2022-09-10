@@ -1145,9 +1145,16 @@ numbers.forEach(ele => {
 console.log(sum);
 ```
 
-
+`find max using forEach`
 ```javascript
-
+let values = [10, 40, 20, 30, 5];
+let max = values[0];
+values.forEach(value => {
+    if (value > max) {
+        max = value;
+    }
+})
+console.log(max);
 ```
 
 
