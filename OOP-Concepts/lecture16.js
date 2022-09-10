@@ -87,3 +87,8 @@ let numbers = [10, 20, 30, 40];
 
 
 
+let nums1 = [1,2,3,4];
+nums1.forEach(singleNum => {
+     console.log(singleNum*2);
+})
+

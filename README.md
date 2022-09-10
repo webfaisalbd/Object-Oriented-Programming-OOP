@@ -1157,9 +1157,12 @@ values.forEach(value => {
 console.log(max);
 ```
 
-
+`find square using forEach loop`
 ```javascript
-
+let nums1 = [1,2,3,4];
+nums1.forEach(singleNum => {
+     console.log(singleNum*2);
+})
 ```
 
 
