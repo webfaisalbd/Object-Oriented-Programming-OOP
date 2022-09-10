@@ -1077,6 +1077,7 @@ console.log(myArray); // ['faisal', 'azhar']
 var myArray2 = ['faisal', 'sakib', 'forid', 'azhar'];
 var result2 = myArray2.splice(1,0,'nahid','sobuj');
 console.log(myArray2); // ['faisal', 'nahid', 'sobuj', 'sakib', 'forid', 'azhar']
+console.log(result2); // []
 ```
 
 
@@ -1089,6 +1090,31 @@ console.log(myArray3); // [1,50,60,70,4]
 ```
 
 
+---
+---
+
+
+### forEach()
+- normal for loop
+```javascript
+let elements = [10,20,30,40];
+for(let i=0; i<elements.length;i++){
+    console.log(i,elements[i]);
+}
+```
+- forEach loop
+```javascript
+let elements = [10,20,30,40];
+
+elements.forEach((ele, index, fullArray) => {
+  console.log(index ,ele, fullArray) 
+})
+```
+
+---
+---
+
+
 ```javascript
 
 ```
@@ -1099,23 +1125,39 @@ console.log(myArray3); // [1,50,60,70,4]
 ```
 
 
+```javascript
+
+```
 
 
+```javascript
+
+```
 
 
+```javascript
+
+```
 
 
+```javascript
+
+```
 
 
+```javascript
+
+```
 
 
+```javascript
+
+```
 
 
+```javascript
 
-
-
-
-
+```
 
 
 ---
