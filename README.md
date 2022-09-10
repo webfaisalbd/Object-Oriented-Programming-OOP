@@ -1165,9 +1165,18 @@ nums1.forEach(singleNum => {
 })
 ```
 
+---
 
+### find method
+- in number array, not change main array
+`greater than 60 `
 ```javascript
+let myNums = [20,40,50,60,12,79];
+let myValue = myNums.find((value)=> value>50);
+console.log(myValue);
 
+myValue = 70;
+console.log(myNums);
 ```
 
 

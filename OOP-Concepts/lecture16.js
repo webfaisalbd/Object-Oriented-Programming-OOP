@@ -87,8 +87,19 @@ let numbers = [10, 20, 30, 40];
 
 
 
-let nums1 = [1,2,3,4];
-nums1.forEach(singleNum => {
-     console.log(singleNum*2);
-})
+// let nums1 = [1,2,3,4];
+// nums1.forEach(singleNum => {
+//      console.log(singleNum*2);
+// })
 
+
+
+
+// find method
+// in number array, not change main array
+let myNums = [20,40,50,60,12,79];
+let myValue = myNums.find((value)=> value>50);
+console.log(myValue);
+
+myValue = 70;
+console.log(myNums);
