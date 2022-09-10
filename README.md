@@ -1179,10 +1179,30 @@ myValue = 70;
 console.log(myNums);
 ```
 
-
+- find method
+- in array of object, change main array
 ```javascript
+let nums = [
+    {name: "faisal", salary: 15000},
+    {name: "sakib", salary: 25000},
+    {name: "alom", salary: 35000},
+    {name: "farid", salary: 50000},
+];
+const returned = nums.find((value)=> {
+    return value.salary>35000;
+})
 
+returned.name = 'forid';
+console.log(nums);
 ```
+
+---
+---
+
+
+
+
+
 
 
 ```javascript

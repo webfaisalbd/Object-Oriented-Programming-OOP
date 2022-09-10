@@ -97,9 +97,24 @@ let numbers = [10, 20, 30, 40];
 
 // find method
 // in number array, not change main array
-let myNums = [20,40,50,60,12,79];
-let myValue = myNums.find((value)=> value>50);
-console.log(myValue);
+// let myNums = [20,40,50,60,12,79];
+// let myValue = myNums.find((value)=> value>50);
+// console.log(myValue);
 
-myValue = 70;
-console.log(myNums);
+// myValue = 70;
+// console.log(myNums);
+
+
+// in array of object, change main array 
+let nums = [
+    {name: "faisal", salary: 15000},
+    {name: "sakib", salary: 25000},
+    {name: "alom", salary: 35000},
+    {name: "farid", salary: 50000},
+];
+const returned = nums.find((value)=> {
+    return value.salary>35000;
+})
+
+returned.name = 'forid';
+console.log(nums);
