@@ -1114,7 +1114,7 @@ elements.forEach((ele, index, fullArray) => {
 ---
 
 - making forEach using for loop 
-- find sum of an array
+`find sum of an array`
 ```javascript
 let numbers = [10, 20, 30, 40];
 let sum = 0;
@@ -1133,9 +1133,16 @@ makeForEach(numbers, sumFunc);
 console.log(sum);
 ```
 
-
+`find sum of an array using forEach`
 ```javascript
+let numbers = [10, 20, 30, 40];
+let sum = 0;
 
+
+numbers.forEach(ele => {
+    sum += ele;
+});
+console.log(sum);
 ```
 
 
