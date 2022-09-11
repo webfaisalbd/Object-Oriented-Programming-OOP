@@ -1243,6 +1243,69 @@ console.log(avg);
 console.timeEnd('Reduce');
 ```
 
+- map method making, using reduce
+-reduce method diye, map er kaj korano
+```javascript
+const myNumbers = [1,2,3,4,5];
+
+// reduce method diye, map er kaj korano
+const mapped = myNumbers.reduce((pre, cur, index, arr)=> {
+    pre.push(cur);
+    return pre;
+},[]);
+console.log(mapped);
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
 
 ---
 ---
