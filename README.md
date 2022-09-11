@@ -1189,10 +1189,19 @@ const output = nums.forEach((value)=>{
 console.log(output); // undefined
 ```
 
+---
+---
 
+
+### filter method
 
 ```javascript
+let nums = [21,12,13,24,56,2,67,25];
 
+const filtered = nums.filter((value)=> {
+    return value>13;
+})
+console.log(filtered); // [21, 24, 56, 67, 25] 
 ```
 
 
