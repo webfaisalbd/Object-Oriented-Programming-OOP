@@ -56,13 +56,38 @@
 // },[]);
 // console.log(mapped);
 
-const myNumbers = [1,2,3,4,5];
+// const myNumbers = [1,2,3,4,5];
 
 // reduce method diye, filter er kaj korano
-const filtedOdd = myNumbers.reduce((pre, cur, index, arr)=>{
-    if(cur%2 ==1){
-        pre.push(cur);
-    }
-    return pre;
-},[]);
-console.log(filtedOdd);
+// const filtedOdd = myNumbers.reduce((pre, cur, index, arr)=>{
+    //     if(cur%2 ==1){
+//         pre.push(cur);
+//     }
+//     return pre;
+// },[]);
+// console.log(filtedOdd);
+
+
+
+// - When filter and map both needed in on program 
+const myNumbers = [1,2,3,4,5];
+
+let bigArray = [];
+for(let i=0;i<5000;i++){
+    bigArray.push(i);
+}
+
+console.time('Both');
+// odd number find kore, 2 diye multiply koro 
+const filted = bigArray.filter((b)=>{
+    return b%2 == 0;
+})
+// console.log(filted);
+const mapped = filted.map((m)=> {
+    return m*2;
+})
+// console.log(mapped);
+
+console.timeEnd('Both')
+
+

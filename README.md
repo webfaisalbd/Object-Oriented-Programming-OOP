@@ -1269,9 +1269,29 @@ const filtedOdd = myNumbers.reduce((pre, cur, index, arr)=>{
 console.log(filtedOdd);
 ```
 
-
+- When filter and map both needed in on program 
+- without reduce method
 ```javascript
 
+const myNumbers = [1,2,3,4,5];
+
+let bigArray = [];
+for(let i=0;i<5000;i++){
+    bigArray.push(i);
+}
+
+console.time('Both');
+// odd number find kore, 2 diye multiply koro 
+const filted = bigArray.filter((b)=>{
+    return b%2 == 0;
+})
+// console.log(filted);
+const mapped = filted.map((m)=> {
+    return m*2;
+})
+// console.log(mapped);
+
+console.timeEnd('Both')
 ```
 
 
