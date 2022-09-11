@@ -1180,10 +1180,13 @@ const output = nums.map((value)=>{
 console.log(output); // [1, 2, 3, 4]
 ```
 
-
-
+- map er jaygay forEach diye return korle , undefined asbe
 ```javascript
-
+let nums = [1,2,3,4];
+const output = nums.forEach((value)=>{
+    return value;
+})
+console.log(output); // undefined
 ```
 
 
