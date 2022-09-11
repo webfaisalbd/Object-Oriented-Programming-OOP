@@ -73,21 +73,34 @@
 const myNumbers = [1,2,3,4,5];
 
 let bigArray = [];
-for(let i=0;i<5000;i++){
+for(let i=1;i<5000;i++){
     bigArray.push(i);
 }
 
 console.time('Both');
 // odd number find kore, 2 diye multiply koro 
 const filted = bigArray.filter((b)=>{
-    return b%2 == 0;
+    return b%2 == 1;
 })
 // console.log(filted);
 const mapped = filted.map((m)=> {
     return m*2;
 })
-// console.log(mapped);
+console.log(mapped);
 
 console.timeEnd('Both')
+
+
+// - using reduce
+// odd number find kore, 2 diye multiply koro 
+console.time('reduce');
+const oddMultiple = bigArray.reduce((pre,cur, index, arr)=> {
+    if(cur%2 ==1){
+        pre.push(cur*2);
+    }
+    return pre;
+},[]);
+console.log(oddMultiple);
+console.timeEnd('reduce');
 
 

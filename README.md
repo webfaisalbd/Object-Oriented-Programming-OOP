@@ -1270,11 +1270,11 @@ console.log(filtedOdd);
 ```
 
 - When filter and map both needed in on program 
+
+#### jodi filter and map, 2ta method, same program e use kori, tahole performance ja dibe, tar cheye ek reduce use kore, map and filter er kaj nijei korle, performance aro besi valo hobe.
+
 - without reduce method
 ```javascript
-
-const myNumbers = [1,2,3,4,5];
-
 let bigArray = [];
 for(let i=0;i<5000;i++){
     bigArray.push(i);
@@ -1296,7 +1296,22 @@ console.timeEnd('Both')
 
 
 ```javascript
+// - using reduce
+// odd number find kore, 2 diye multiply koro 
+let bigArray = [];
+for(let i=0;i<5000;i++){
+    bigArray.push(i);
+}
 
+console.time('reduce');
+const oddMultiple = bigArray.reduce((pre,cur, index, arr)=> {
+    if(cur%2 ==1){
+        pre.push(cur*2);
+    }
+    return pre;
+},[]);
+console.log(oddMultiple);
+console.timeEnd('reduce');
 ```
 
 
