@@ -1227,9 +1227,20 @@ console.timeEnd("Avg")
 
 ```
 
-
+- calculate average using reduce 
 ```javascript
-
+// avg 
+console.time('Reduce');
+var numbers = [1, 2, 3, 4, 5];
+const avg = numbers.reduce((acc, cur, index, arr) => {
+    acc = acc + cur;
+    if (index == arr.length - 1) {
+        return acc / arr.length;
+    }
+    return acc;
+})
+console.log(avg);
+console.timeEnd('Reduce');
 ```
 
 
