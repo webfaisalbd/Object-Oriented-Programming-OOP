@@ -47,11 +47,22 @@
 
 
 
-const myNumbers = [1,2,3,4,5];
+// const myNumbers = [1,2,3,4,5];
 
 // reduce method diye, map er kaj korano
-const mapped = myNumbers.reduce((pre, cur, index, arr)=> {
-    pre.push(cur);
+// const mapped = myNumbers.reduce((pre, cur, index, arr)=> {
+//     pre.push(cur);
+//     return pre;
+// },[]);
+// console.log(mapped);
+
+const myNumbers = [1,2,3,4,5];
+
+// reduce method diye, filter er kaj korano
+const filtedOdd = myNumbers.reduce((pre, cur, index, arr)=>{
+    if(cur%2 ==1){
+        pre.push(cur);
+    }
     return pre;
 },[]);
-console.log(mapped);
+console.log(filtedOdd);

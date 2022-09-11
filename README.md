@@ -1256,9 +1256,17 @@ const mapped = myNumbers.reduce((pre, cur, index, arr)=> {
 console.log(mapped);
 ```
 
-
+- reduce method diye, filter er kaj korano
 ```javascript
+const myNumbers = [1,2,3,4,5];
 
+const filtedOdd = myNumbers.reduce((pre, cur, index, arr)=>{
+    if(cur%2 ==1){
+        pre.push(cur);
+    }
+    return pre;
+},[]);
+console.log(filtedOdd);
 ```
 
 
