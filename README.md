@@ -1210,8 +1210,20 @@ const output = nums.reduce((previousValue, currentValue, currentIndex, array) =>
 console.log(output); // 10
 ```
 
-
+- reduce method, sum
 ```javascript
+// sum
+console.time("Avg")
+const numbers1 = [1, 2, 3, 4, 5];
+const sum = numbers1.reduce((acc, cur, index, arr) => {
+    acc = acc + cur;
+    return acc;
+})
+console.log("sum of ", sum);
+console.timeEnd("Avg")
+// output: 
+// sum of  15
+// Avg: 4.772ms
 
 ```
 
