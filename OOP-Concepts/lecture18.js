@@ -13,10 +13,23 @@
 
 
 // filter 
-let nums = [21,12,13,24,56,2,67,25];
+// let nums = [21,12,13,24,56,2,67,25];
 
-const filtered = nums.filter((value)=> {
-    return value>13;
+// const filtered = nums.filter((value)=> {
+//     return value>13;
+// })
+// console.log(filtered);
+
+
+
+
+// findIndex()  
+let myNums = [20,40,50,60,12,70];
+
+let output = myNums.findIndex((value)=> {
+    return value>50;
 })
-console.log(filtered);
+console.log(output); // 3
+
+
 

@@ -1262,6 +1262,22 @@ console.log(nums);
 ---
 
 
+### findIndex() // find index
+
+```javascript
+let myNums = [20,40,50,60,12,70];
+
+let output = myNums.findIndex((value)=> {
+    return value>50;
+})
+console.log(output); // 3
+```
+
+
+---
+---
+
+
 ### Reduce method
 ```javascript
 const nums = [1, 2, 3, 4];
