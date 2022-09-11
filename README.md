@@ -1166,6 +1166,56 @@ nums1.forEach(singleNum => {
 ```
 
 ---
+---
+
+
+### map method
+
+- map function e return kora jay kintu forEach e return kora jay na
+```javascript
+let nums = [1,2,3,4];
+const output = nums.map((value)=>{
+    return value;
+})
+console.log(output); // [1, 2, 3, 4]
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+```javascript
+
+```
+
+
+
+
+
+---
+---
 
 ### find method
 - in number array, not change main array
