@@ -36,11 +36,20 @@ let myObj = {
 
 
 
-// make values in an array 
-const countries = Object.values(myObj);
-console.log(countries);
+// // make values in an array 
+// const countries = Object.values(myObj);
+// console.log(countries);
 
-// and map 
-const countryList = countries.forEach((singleCountry)=> {
-    console.log(singleCountry.toUpperCase());
+// // and map 
+// const countryList = countries.forEach((singleCountry)=> {
+//     console.log(singleCountry.toUpperCase());
+// })
+
+Object.keys(myObj).map((country)=> {
+    console.log("Capital of "+country+ " is : "+myObj[country]);
 })
+// Capital of bangladesh is : Dhaka
+// Capital of canada is : Ottawa
+// Capital of japan is : Tokyo
+// Capital of australia is : Canberra
+// Capital of germany is : Berlin

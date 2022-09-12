@@ -1486,9 +1486,16 @@ const countryList = countries.forEach((singleCountry)=> {
 })
 ```
 
-
+- keys and values together
 ```javascript
-
+Object.keys(myObj).map((country)=> {
+    console.log("Capital of "+country+ " is : "+myObj[country]);
+})
+// Capital of bangladesh is : Dhaka
+// Capital of canada is : Ottawa
+// Capital of japan is : Tokyo
+// Capital of australia is : Canberra
+// Capital of germany is : Berlin
 ```
 
 
