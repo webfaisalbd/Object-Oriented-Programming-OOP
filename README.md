@@ -1475,6 +1475,28 @@ console.log(countryList);
 ```
 
 
+```javascript
+// make values in an array 
+const countries = Object.values(myObj);
+console.log(countries);
+
+// and map 
+const countryList = countries.forEach((singleCountry)=> {
+    console.log(singleCountry.toUpperCase());
+})
+```
+
+
+```javascript
+
+```
+
+
+```javascript
+
+```
+
+
 ---
 ---
 
