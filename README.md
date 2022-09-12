@@ -1498,9 +1498,12 @@ Object.keys(myObj).map((country)=> {
 // Capital of germany is : Berlin
 ```
 
-
+- of not work in object
 ```javascript
-
+for(element of myObj){
+    console.log(element);
+}
+// object is not iterable
 ```
 
 

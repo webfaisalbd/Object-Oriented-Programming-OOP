@@ -45,11 +45,17 @@ let myObj = {
 //     console.log(singleCountry.toUpperCase());
 // })
 
-Object.keys(myObj).map((country)=> {
-    console.log("Capital of "+country+ " is : "+myObj[country]);
-})
+// Object.keys(myObj).map((country)=> {
+//     console.log("Capital of "+country+ " is : "+myObj[country]);
+// })
 // Capital of bangladesh is : Dhaka
 // Capital of canada is : Ottawa
 // Capital of japan is : Tokyo
 // Capital of australia is : Canberra
 // Capital of germany is : Berlin
+
+
+// - of not work in object
+for(element of myObj){
+    console.log(element);
+}
