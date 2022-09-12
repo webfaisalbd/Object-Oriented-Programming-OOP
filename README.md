@@ -1456,9 +1456,17 @@ console.log(Object.keys(myObj));
 console.log(Object.values(myObj));
 ```
 
-
+- object keys k array te niye, then, array k map calano
 ```javascript
+// make keys in an array 
+const countries = Object.keys(myObj);
+console.log(countries);
 
+// and map 
+const countryList = countries.map((singleCountry)=> {
+    return singleCountry.toUpperCase();
+})
+console.log(countryList);
 ```
 
 
