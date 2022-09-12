@@ -1506,6 +1506,29 @@ for(element of myObj){
 // object is not iterable
 ```
 
+```javascript
+
+const person = {
+    name: "Faisal",
+    age: 21,
+    email: "faisal@gmail.com"
+}
+
+// working with bracket notation
+for(element in person){
+    console.log(person[element]);
+}
+// Faisal
+// 21
+// faisal@gmail.com
+
+
+
+// undefined with dot notation
+for(element in person){
+    console.log(person.element);
+} // undefined
+```
 
 ---
 ---

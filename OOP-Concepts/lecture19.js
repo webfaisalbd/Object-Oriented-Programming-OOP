@@ -55,7 +55,30 @@ let myObj = {
 // Capital of germany is : Berlin
 
 
-// - of not work in object
-for(element of myObj){
-    console.log(element);
+// // - of not work in object
+// for(element of myObj){
+//     console.log(element);
+// }
+
+
+
+const person = {
+    name: "Faisal",
+    age: 21,
+    email: "faisal@gmail.com"
 }
+
+// working with bracket notation
+for(element in person){
+    console.log(person[element]);
+}
+// Faisal
+// 21
+// faisal@gmail.com
+
+
+
+// undefined with dot notation
+for(element in person){
+    console.log(person.element);
+} // undefined
