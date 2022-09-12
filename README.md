@@ -1450,8 +1450,10 @@ for(element in myObj){
 ```
 
 
+- keys values 
 ```javascript
-
+console.log(Object.keys(myObj));
+console.log(Object.values(myObj));
 ```
 
 
