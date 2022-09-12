@@ -1,3 +1,8 @@
+// loop 
+// for(element in myObj){
+//     console.log(element);
+// }
+
 let myObj = {
     bangladesh: "Dhaka",
     canada: "Ottawa",
@@ -6,7 +11,7 @@ let myObj = {
     germany: "Berlin"
 }
 
-// loop 
+// find value 
 for(element in myObj){
-    console.log(element);
+    console.log(myObj[element]);
 }

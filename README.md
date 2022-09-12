@@ -1424,15 +1424,29 @@ let myObj = {
     germany: "Berlin"
 }
 
-// loop 
+// loop
+// find keys 
 for(element in myObj){
     console.log(element);
 }
+// bangladesh
+// canada
+// japan
+// australia
+// germany
 ```
 
 
+- find value 
 ```javascript
-
+for(element in myObj){
+    console.log(myObj[element]);
+}
+// Dhaka
+// Ottawa
+// Tokyo
+// Canberra
+// Berlin
 ```
 
 
