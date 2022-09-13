@@ -22,9 +22,19 @@
 // }
 
 
-const myStr = "hi I am";
-for(element in myStr){
-    console.log(element);
-}
+// const myStr = "hi I am";
+// for(element in myStr){
+//     console.log(element);
+// }
 
+
+const myObj = {
+    name: 'faisal',
+    age: 26
+}
+for(element in myObj){
+    console.log(element);
+} 
+// name
+// age
 

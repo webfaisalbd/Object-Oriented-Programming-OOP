@@ -1680,10 +1680,24 @@ for(element in myStr){
 
 ```
 
+---
+---
 
+### object e for in use
 ```javascript
-
+const myObj = {
+    name: 'faisal',
+    age: 26
+}
+for(element in myObj){
+    console.log(element);
+} 
+// name
+// age
 ```
+
+---
+---
 
 
 ```javascript
