@@ -1710,9 +1710,16 @@ for(element of myObj){
 }  // not iterable
 ```
 
+---
+---
 
+### array te for of use
 ```javascript
+const myArr = [2,4,5,7,8];
 
+for(element of myArr){
+    console.log(element);
+}
 ```
 
 

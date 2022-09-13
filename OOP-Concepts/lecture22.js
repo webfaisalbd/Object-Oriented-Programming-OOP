@@ -39,11 +39,18 @@
 // // age
 
 
-const myObj = {
-    name: 'faisal',
-    age: 26
-}
-for(element of myObj){
+// const myObj = {
+//     name: 'faisal',
+//     age: 26
+// }
+// for(element of myObj){
+//     console.log(element);
+// }  // not iterable
+
+
+const myArr = [2,4,5,7,8];
+
+for(element of myArr){
     console.log(element);
-}  // not iterable
+}
 
