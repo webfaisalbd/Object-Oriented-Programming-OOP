@@ -16,8 +16,15 @@
 // console.log(set); // Set(5) {1, 2, 3, 4, 5}
 
 
+// const myStr = "hi I am";
+// for(element of myStr){
+//     console.log(element);
+// }
+
+
 const myStr = "hi I am";
-for(element of myStr){
+for(element in myStr){
     console.log(element);
 }
+
 

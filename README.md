@@ -1671,6 +1671,15 @@ for(element of myStr){
 
 ```
 
+### string e for in use
+```javascript
+const myStr = "hi I am";
+for(element in myStr){
+    console.log(element);
+}
+
+```
+
 
 ```javascript
 
