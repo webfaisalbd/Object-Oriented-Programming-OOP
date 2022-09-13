@@ -28,13 +28,22 @@
 // }
 
 
+// const myObj = {
+//     name: 'faisal',
+//     age: 26
+// }
+// for(element in myObj){
+//     console.log(element);
+// } 
+// // name
+// // age
+
+
 const myObj = {
     name: 'faisal',
     age: 26
 }
-for(element in myObj){
+for(element of myObj){
     console.log(element);
-} 
-// name
-// age
+}  // not iterable
 

@@ -1699,9 +1699,15 @@ for(element in myObj){
 ---
 ---
 
-
+### object e for of use(not iterable)
 ```javascript
-
+const myObj = {
+    name: 'faisal',
+    age: 26
+}
+for(element of myObj){
+    console.log(element);
+}  // not iterable
 ```
 
 
