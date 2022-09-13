@@ -55,8 +55,28 @@
 // }
 
 
-const myArr = [2,4,5,7,8];
+// const myArr = [2,4,5,7,8];
 
-for(element in myArr){
-    console.log(element);
-}
+// for(element in myArr){
+//     console.log(element);
+// }
+
+
+// Object.is 
+const a = 10;
+const b = 20;
+const c = 10;
+
+console.log("a compare with b: ",Object.is(a,b)); // false
+console.log("a compare with c: ",Object.is(a,c)); // true
+
+
+// reference type
+const d = [];
+const e = [];
+console.log("d compare with e: ",Object.is(d,e)); // false
+
+// reference type
+const f = [];
+const g = [];
+console.log("f compare with g: ",Object.is(f,g)); // false
