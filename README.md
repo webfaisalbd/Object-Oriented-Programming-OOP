@@ -1723,9 +1723,18 @@ for(element of myArr){
 ```
 
 
+### array te for in use
 ```javascript
+const myArr = [2,4,5,7,8];
 
+for(element in myArr){
+    console.log(element);
+}
 ```
+
+---
+---
+
 
 
 ```javascript

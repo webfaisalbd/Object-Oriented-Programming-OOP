@@ -48,9 +48,15 @@
 // }  // not iterable
 
 
+// const myArr = [2,4,5,7,8];
+
+// for(element of myArr){
+//     console.log(element);
+// }
+
+
 const myArr = [2,4,5,7,8];
 
-for(element of myArr){
+for(element in myArr){
     console.log(element);
 }
-
