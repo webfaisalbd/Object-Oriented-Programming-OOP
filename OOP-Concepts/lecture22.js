@@ -9,3 +9,8 @@
 // console.log(demoSet.size); // 2
 // console.log(demoSet.has(2)); // true
 
+
+const duplicate = [1,2,3,4,1,5,2,3];
+
+const set = new Set([...duplicate]);
+console.log(set); // Set(5) {1, 2, 3, 4, 5}

@@ -1649,10 +1649,18 @@ console.log(demoSet.has(2)); // true
 
 ```
 
-
+- remove duplicate from an array
 ```javascript
+const duplicate = [1,2,3,4,1,5,2,3];
 
+const set = new Set([...duplicate]);
+console.log(set); // Set(5) {1, 2, 3, 4, 5}
 ```
+
+---
+---
+
+
 
 
 ```javascript
