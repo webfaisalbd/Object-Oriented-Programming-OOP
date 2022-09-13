@@ -1605,9 +1605,14 @@ map.clear();
 console.log(map); // Map(0) {size: 0}
 ```
 
-
+- different types of Map data structure
 ```javascript
-
+const map = new Map();
+map.set(1,20);
+map.set([1,2,3], false);
+map.set(()=> { },[2,4,5]);
+console.log(map); 
+// Map(3) {1 => 20, Array(3) => false, ƒ => Array(3)}
 ```
 
 
