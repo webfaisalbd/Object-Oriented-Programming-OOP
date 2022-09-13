@@ -1662,8 +1662,12 @@ console.log(set); // Set(5) {1, 2, 3, 4, 5}
 
 
 
-
+### string e for of use
 ```javascript
+const myStr = "hi I am";
+for(element of myStr){
+    console.log(element);
+}
 
 ```
 
