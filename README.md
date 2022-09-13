@@ -1552,8 +1552,20 @@ console.log(output3); //  ['I', 'love', 'you']
 ```
 
 
+- join method
+- array k string e convert kore
 ```javascript
+const myArray = ['I', 'Love', 'You'];
+const output1 = myArray.join();
+console.log(output1); // I,Love,You
 
+
+const output2 = myArray.join('');
+console.log(output2); // ILoveYou
+
+
+const output3 = myArray.join(' ');
+console.log(output3); // I Love You
 ```
 
 
