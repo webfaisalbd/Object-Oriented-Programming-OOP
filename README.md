@@ -1569,8 +1569,16 @@ console.log(output3); // I Love You
 ```
 
 
+- sort a string using split and join method 
+- split make string array 
+- and 
+- join make array string 
 ```javascript
-
+const text = 'nipu';
+let splited = text.split('');
+let reversed = splited.reverse();
+let joined = reversed.join('')
+console.log(joined); // upin
 ```
 
 
